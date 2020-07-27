@@ -1,3 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function BathTime() {
+    console.log('ITS BATH TIME!!!!');
+
 
 <header>
 <h1>Last Time Baby Had A Bath</h1>
@@ -22,5 +28,9 @@ style="text-decoration:none">
 Back
 </a>
 </div>
-
 </main>
+
+
+}
+
+export default BathTime;
