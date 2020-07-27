@@ -1,4 +1,5 @@
 import React from 'react';
+import "./App.css";
 
 
 
@@ -30,8 +31,8 @@ class NavButtons extends React.Component {
 
 
 
-
-
+///////////////////////////////////////////////////////////////
+// RENDERS APP TO VIEWPORT
 function App() {
   return (
     <main className='App'>
@@ -42,8 +43,5 @@ function App() {
     </main>
   );
 }
-
-
-
 
 export default App;
