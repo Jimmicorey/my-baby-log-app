@@ -1,6 +1,9 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import "./App.css";
-
+import FeedBaby from './FeedBaby';
+import ChangeDiaper from './ChangeDiaper';
+import BathTime from './BathTime';
 
 
 //timer should be a functional component
@@ -21,13 +24,20 @@ class NavButtons extends React.Component {
   render() {
     return (
       <div class="flex-container">
-        <a href="feed-baby.html" class="button">Feed Baby</a>
-        <a href="change-diaper.html" class="button">Change Diaper</a>
-        <a href="bath-time.html" class="button">Bath Time</a>
+        {/* <a href="feed-baby.html" class="button">Feed Baby</a> */}
+        <Route path='/feedbaby' component={FeedBaby} className='button'>Feed Baby</Route>
+
+        {/* <a href="change-diaper.html" class="button">Change Diaper</a> */}
+        <Route path='/changediaper' component={ChangeDiaper} className='button'>Change Diaper</Route>
+        
+        {/* <a href="bath-time.html" class="button">Bath Time</a> */}
+        <Route path='/bathtime' component={BathTime} className='button'>Bath Time</Route>
       </div>
     )
   }
 }
+
+
 
 
 
