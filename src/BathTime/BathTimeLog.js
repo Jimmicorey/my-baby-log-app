@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 import './BathTimeLog.css';
 
 
-// const DummyData = [
-//  {log: 'BathTime', date: '01/01/2020', time: '7:30 PM', type: ''},
-//  {log: 'BathTime', date: '01/03/2020', time: '7:30 PM', type: ''},
-//  {log: 'BathTime', date: '01/05/2020', time: '7:30 PM', type: ''}
+//  {log: 'BathTime', date: '01/01/2020', time: '7:30 PM', type: ''}
 // ];
+// function DataLog(props) {
+//   return <li>{props.date} : {props.time}</li>
+// }
 
 
-function DataLog(props) {
-  return <li>{props.date} : {props.time}</li>
-}
-
+const DummyData = ['Log1', 'Log2', 'Log3']
+const DataLog = DummyData.map((data) =>
+  <li>{data}</li>
+);
 
 
 function BathTimeLog() {
@@ -24,7 +24,7 @@ function BathTimeLog() {
   
       <div className='flex-container'>
 
-        <DataLog date="DATE" time="TIME"/>
+        <ul>{DataLog}</ul>
 
         <div className='flex-container-row'>
           <Link to='/bathtime' className='button-nav'>Back</Link>
@@ -33,7 +33,7 @@ function BathTimeLog() {
       </div>
     </div>
   
-    );
+  );
 }
 
 export default BathTimeLog;

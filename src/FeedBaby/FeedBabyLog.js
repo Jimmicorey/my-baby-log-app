@@ -5,14 +5,16 @@ import './FeedBabyLog.css';
 
 // const DummyData = [
 //   {log: 'FeedBaby', date: '01/01/2020', time: '9:30 AM', type: 'Formula'},
-//   {log: 'FeedBaby', date: '01/01/2020', time: '10:30 AM', type: 'Milk-Bottle'},
-//   {log: 'FeedBaby', date: '01/01/2020', time: '11:30 AM', type: 'Milk-Left'},
-//   {log: 'FeedBaby', date: '01/01/2020', time: '12:30 PM', type: 'Milk-Right'}
 // ]
- 
-function DataLog(props) {
-  return <li>{props.date} : {props.time} : {props.type}</li>
-}
+// function DataLog(props) {
+//   return <li>{props.date} : {props.time} : {props.type}</li>
+// }
+
+
+const DummyData = ['Log1', 'Log2', 'Log3']
+const DataLog = DummyData.map((data) =>
+  <li>{data}</li>
+);
 
 
 function FeedBabyLog(props) {
@@ -22,8 +24,8 @@ function FeedBabyLog(props) {
         <h1>FEED BABY LOG</h1>
   
       <div className='flex-container'>
-        
-        <DataLog date="DATE" time="TIME" type="TYPE"/>
+
+        <ul>{DataLog}</ul>
 
         <div className='flex-container-row'>
           <Link to='/feedbaby' className='button-nav'>Back</Link>

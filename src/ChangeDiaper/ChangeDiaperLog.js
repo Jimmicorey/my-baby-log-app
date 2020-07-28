@@ -5,13 +5,17 @@ import './ChangeDiaperLog.css';
 
 // const DummyData = [
 //  {log: 'ChangeDiaper', date: '01/01/2020', time: '1:30 PM', type: 'Poopy'},
-//  {log: 'ChangeDiaper', date: '01/01/2020', time: '2:30 PM', type: 'Wet'},
-//  {log: 'ChangeDiaper', date: '01/01/2020', time: '3:30 PM', type: 'Both'}
 // ]
+// function DataLog(props) {
+//   return <li>{props.date} : {props.time} : {props.type}</li>
+// }
 
-function DataLog(props) {
-  return <li>{props.date} : {props.time} : {props.type}</li>
-}
+
+const DummyData = ['Log1', 'Log2', 'Log3']
+const DataLog = DummyData.map((data) =>
+  <li>{data}</li>
+);
+
 
 function ChangeDiaperLog(props) {
   return (
@@ -20,8 +24,8 @@ function ChangeDiaperLog(props) {
         <h1>CHANGE DIAPER LOG</h1>
   
       <div className='flex-container'>
-        
-        <DataLog date="DATE" time="TIME" type="TYPE"/>
+
+        <ul>{DataLog}</ul>
 
         <div className='flex-container-row'>
           <Link to='/changediaper' className='button-nav'>Back</Link>
@@ -34,3 +38,5 @@ function ChangeDiaperLog(props) {
 }
 
 export default ChangeDiaperLog;
+
+
