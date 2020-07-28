@@ -10,6 +10,7 @@
 
 # production
 /build
+/HTML_TRANSFERS
 
 # misc
 .DS_Store

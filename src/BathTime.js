@@ -1,16 +1,29 @@
 import React from 'react';
-import './App.css';
+import { Link } from 'react-router-dom';
+import './BathTime.css';
 
 
 
 function BathTime() {
   return (
 
-    
-    <div>
-      <h2>BATH TIME PAGE</h2> 
+  <div>
+    <header>
+      <h1>Last Time Baby Had A Bath</h1>
+      <p>00 / 00 / 0000</p>
+    </header>
+
+    <div className='flex-container'>
+      <div className="flex-container">
+        <button className="button">Bath Time</button>
+      </div>
+
+      <div className='flex-container-row'>
+        <Link to='/bathtimelog' className='button-nav'>Logs</Link>
+        <Link to='/' className='button-nav'>Back</Link>
+      </div>
     </div>
-    
+  </div>
 
   );
 }

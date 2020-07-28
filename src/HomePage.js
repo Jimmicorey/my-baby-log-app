@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Timer() {
     return (
@@ -14,9 +15,9 @@ function HomePage() {
     return (
         <div className="flex-container">
             <Timer />
-            <a href='/feedbaby' className='button'>Feed Baby</a>
-            <a href='/changediaper' className='button'>Change Diaper</a>
-            <a href='/bathtime' className='button'>Bath Time</a> 
+            <Link to='/feedbaby' className='button'>Feed Baby</Link>
+            <Link to='/changediaper' className='button'>Change Diaper</Link>
+            <Link to='/bathtime' className='button'>Bath Time</Link> 
         </div>  
     )
 }
