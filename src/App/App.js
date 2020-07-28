@@ -1,12 +1,12 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import HomePage from './HomePage';
-import FeedBaby from './FeedBaby';
-import ChangeDiaper from './ChangeDiaper';
-import BathTime from './BathTime';
-import FeedBabyLog from './FeedBabyLog';
-import ChangeDiaperLog from './ChangeDiaperLog';
-import BathTimeLog from './BathTimeLog';
+import HomePage from '../HomePage/HomePage';
+import FeedBaby from '../FeedBaby/FeedBaby';
+import ChangeDiaper from '../ChangeDiaper/ChangeDiaper';
+import BathTime from '../BathTime/BathTime';
+import FeedBabyLog from '../FeedBaby/FeedBabyLog';
+import ChangeDiaperLog from '../ChangeDiaper/ChangeDiaperLog';
+import BathTimeLog from '../BathTime/BathTimeLog';
 
 import './App.css';
 
