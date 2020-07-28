@@ -2,10 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './BathTimeLog.css';
 
-/**
- * This component needs to utilize DATABASE to populate stored LOGS
- * 
- */
+
+// const DummyData = [
+//  {log: 'BathTime', date: '01/01/2020', time: '7:30 PM', type: ''},
+//  {log: 'BathTime', date: '01/03/2020', time: '7:30 PM', type: ''},
+//  {log: 'BathTime', date: '01/05/2020', time: '7:30 PM', type: ''}
+// ];
+
+
+function DataLog(props) {
+  return <li>{props.date} : {props.time}</li>
+}
+
 
 
 function BathTimeLog() {
@@ -15,17 +23,8 @@ function BathTimeLog() {
         <h1>BATH TIME LOG</h1>
   
       <div className='flex-container'>
-      <ul>
-        <li>DATA LOG</li>
-        <li>DATA LOG</li>
-        <li>DATA LOG</li>
-        <li>DATA LOG</li>
-        <li>DATA LOG</li>
-        <li>DATA LOG</li>
-        <li>DATA LOG</li>
-        <li>DATA LOG</li>
-        <li>DATA LOG</li>
-      </ul>
+
+        <DataLog date="DATE" time="TIME"/>
 
         <div className='flex-container-row'>
           <Link to='/bathtime' className='button-nav'>Back</Link>
