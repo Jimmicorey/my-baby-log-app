@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Timer() {
     return (
         <div className="flex-container">
@@ -11,20 +10,15 @@ function Timer() {
 }
 
 
-class HomePage extends React.Component {
-    render() {
-        return (
-        <div>
+function HomePage() {
+    return (
+        <div className="flex-container">
             <Timer />
-
-            <div className="flex-container">
             <a href='/feedbaby' className='button'>Feed Baby</a>
             <a href='/changediaper' className='button'>Change Diaper</a>
-            <a href='/bathtime' className='button'>Bath Time</a>
-            </div>
-        </div>
-        )
-    }
+            <a href='/bathtime' className='button'>Bath Time</a> 
+        </div>  
+    )
 }
 
 export default HomePage;
