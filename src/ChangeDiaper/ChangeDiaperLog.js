@@ -11,7 +11,12 @@ import './ChangeDiaperLog.css';
 // }
 
 
-const DummyData = ['Log1', 'Log2', 'Log3']
+const DummyData = [
+  "01/01/20 9:30 AM Poopy", 
+  "01/01/20 10:30 AM Wet", 
+  "01/01/20 11:30 AM Both"
+]
+
 const DataLog = DummyData.map((data) =>
   <li>{data}</li>
 );

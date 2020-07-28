@@ -11,7 +11,13 @@ import './FeedBabyLog.css';
 // }
 
 
-const DummyData = ['Log1', 'Log2', 'Log3']
+const DummyData = [
+  "01/01/20 9:30 AM Formula", 
+  "01/01/20 10:30 AM Bottle", 
+  "01/01/20 11:30 AM Left",
+  "01/01/20 12:30 PM Right"
+]
+
 const DataLog = DummyData.map((data) =>
   <li>{data}</li>
 );

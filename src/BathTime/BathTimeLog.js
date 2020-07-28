@@ -10,7 +10,12 @@ import './BathTimeLog.css';
 // }
 
 
-const DummyData = ['Log1', 'Log2', 'Log3']
+const DummyData = [
+  "01/01/20 7:30 PM", 
+  "01/04/20 6:30 PM", 
+  "01/07/20 7:00 PM"
+]
+
 const DataLog = DummyData.map((data) =>
   <li>{data}</li>
 );
