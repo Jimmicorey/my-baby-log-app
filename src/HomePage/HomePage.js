@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Timer() {
+
+//FeedBabyTimer will COUNT-UP from the last FeedBabyLog entry to current USER LOGIN
+function FeedBabyTimer() {
     return (
         <div className="flex-container">
             <h1>Last Time Baby Was Fed</h1>
@@ -14,7 +16,7 @@ function Timer() {
 function HomePage() {
     return (
         <div className="flex-container">
-            <Timer />
+            <FeedBabyTimer />
             <Link to='/feedbaby' className='button'>Feed Baby</Link>
             <Link to='/changediaper' className='button'>Change Diaper</Link>
             <Link to='/bathtime' className='button'>Bath Time</Link> 
