@@ -2,20 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './FeedBabyLog.css';
 
-
-// const DummyData = [
-//   {log: 'FeedBaby', date: '01/01/2020', time: '9:30 AM', type: 'Formula'},
-// ]
-// function DataLog(props) {
-//   return <li>{props.date} : {props.time} : {props.type}</li>
-// }
+/** FeedBabyLog should GET (fetch) datalogs from API **/
 
 
 const DummyData = [
-  "01/01/20 9:30 AM Formula", 
-  "01/01/20 10:30 AM Bottle", 
-  "01/01/20 11:30 AM Left",
-  "01/01/20 12:30 PM Right"
+  "01/01/20 9:30 AM", 
+  "01/01/20 10:30 AM", 
+  "01/01/20 11:30 AM",
+  "01/01/20 12:30 PM"
 ]
 
 const DataLog = DummyData.map((data) =>

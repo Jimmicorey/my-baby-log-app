@@ -2,12 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './BathTimeLog.css';
 
-
-//  {log: 'BathTime', date: '01/01/2020', time: '7:30 PM', type: ''}
-// ];
-// function DataLog(props) {
-//   return <li>{props.date} : {props.time}</li>
-// }
+/** BatTimeLog should GET (fetch) datalogs from API **/
 
 
 const DummyData = [

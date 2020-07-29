@@ -2,13 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './ChangeDiaperLog.css';
 
-
-// const DummyData = [
-//  {log: 'ChangeDiaper', date: '01/01/2020', time: '1:30 PM', type: 'Poopy'},
-// ]
-// function DataLog(props) {
-//   return <li>{props.date} : {props.time} : {props.type}</li>
-// }
+/** ChangeDiaperLog should GET (fetch) datalogs from API **/
 
 
 const DummyData = [
