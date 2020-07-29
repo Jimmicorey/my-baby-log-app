@@ -5,7 +5,8 @@ import './FeedBabyLog.css';
 /** FeedBabyLog should GET (fetch) DATALOGS from API(database) **/
 /** FeedBabyLog should POST a NEW DATALOG to API(database) 
  *  per FeedBaby (form submit) **/
-/** FeedBabyLog should render LIST (array) of DATALOGS from API(database) **/
+/** FeedBabyLog should render LIST (array) of DATALOGS from API(database) 
+ *  FeedBabyLog should render 10 MOST RECENT logs **/
 
 
 // const DummyData = [
@@ -22,8 +23,7 @@ import './FeedBabyLog.css';
 class FeedBabyLog extends React.Component {
 
   // state = {
-  //   date: ,
-  //   time:
+  //   "what goes in here???"
   // }
 
   componentDidMount() {

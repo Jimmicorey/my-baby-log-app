@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import './BathTime.css';
 
 /** BathTime should POST a NEW DATA LOG to API Database **/
+/** BathTime is a FORM TYPE=RADIO */
 
 function BathTime() {
-
   return (
 
     <div>

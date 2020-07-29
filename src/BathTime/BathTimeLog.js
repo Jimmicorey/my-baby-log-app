@@ -5,7 +5,8 @@ import './BathTimeLog.css';
 /** BathTimeLog should GET (fetch) DATALOGS from API(database) **/
 /** BathTimeLog should POST a NEW DATALOG to API(database) 
  *  per BathTime (form submit) **/
-/** BathTimeLog should render LIST (array) of DATALOGS from API(database) **/
+/** BathTimeLog should render LIST (array) of DATALOGS from API(database) 
+ *  BathTimeLog should render 10 MOST RECENT logs **/
 
 
 // const DummyData = [
@@ -20,6 +21,10 @@ import './BathTimeLog.css';
 
 
 class BathTimeLog extends React.Component {
+
+  // state = {
+  //   "what goes in here???"
+  // }
 
   componentDidMount() {
     console.log('BathTimeLog componentDidMount works!')

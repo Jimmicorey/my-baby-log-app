@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import './ChangeDiaper.css';
 
 /** ChangeDiaper should POST a NEW DATA LOG to API Database **/
+/** ChangeDiaper is a FORM TYPE=RADIO */
 
 function ChangeDiaper() {
   return (
-
     
     <div>
 

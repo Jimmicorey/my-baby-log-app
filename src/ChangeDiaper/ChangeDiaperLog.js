@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ChangeDiaperLog.css';
-import { render } from '@testing-library/react';
 
 /** ChangeDiaperLog should GET (fetch) DATALOGS from API(database) **/
 /** ChangeDiaperLog should POST a NEW DATALOG to API(database) 
  *  per ChangeDiaper (form submit) **/
-/** ChangeDiaperLog should render LIST (array) of DATALOGS from API(database) **/
+/** ChangeDiaperLog should render LIST (array) of DATALOGS from API(database) 
+ *  ChangeDiaperLog should render 10 MOST RECENT logs **/
 
 
 // const DummyData = [
@@ -21,6 +21,10 @@ import { render } from '@testing-library/react';
 
 
 class ChangeDiaperLog extends React.Component {
+
+  // state = {
+  //   "what goes in here???"
+  // }
 
   componentDidMount() {
     console.log('ChangeDiaperLog componentDidMount works!')
