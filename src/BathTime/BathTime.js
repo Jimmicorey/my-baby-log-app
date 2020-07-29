@@ -5,25 +5,26 @@ import './BathTime.css';
 /** BathTime should POST a NEW DATA LOG to API Database **/
 
 function BathTime() {
+
   return (
 
-  <div>
-    <header>
-      <h1>Last Time Baby Had A Bath</h1>
-      <p>00 / 00 / 0000</p>
-    </header>
+    <div>
+      <header>
+        <h1>Last Time Baby Had A Bath</h1>
+        <p>00 / 00 / 0000</p>
+      </header>
 
-    <div className='flex-container'>
-      <div className="flex-container">
-        <button className="button">Bath Time</button>
-      </div>
+      <div className='flex-container'>
+        <div className="flex-container">
+          <button className="button">Bath Time</button>
+        </div>
 
-      <div className='flex-container-row'>
-        <Link to='/bathtimelog' className='button-nav'>Logs</Link>
-        <Link to='/' className='button-nav'>Back</Link>
+        <div className='flex-container-row'>
+          <Link to='/bathtimelog' className='button-nav'>Logs</Link>
+          <Link to='/' className='button-nav'>Back</Link>
+        </div>
       </div>
     </div>
-  </div>
 
   );
 }

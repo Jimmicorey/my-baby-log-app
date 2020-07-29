@@ -12,15 +12,15 @@ function ChangeDiaper() {
 
       <h1>How was my diaper?</h1>
 
-      <div class='flex-container'>
+      <div className='flex-container'>
 
-        <div class="flex-container">
-          <button class="button">Wet</button>
-          <button class="button">Poopy</button>
-          <button class="button">Both</button>
+        <div className="flex-container">
+          <button className="button">Wet</button>
+          <button className="button">Poopy</button>
+          <button className="button">Both</button>
         </div>
 
-        <div class='flex-container-row'>
+        <div className='flex-container-row'>
           <Link to='/changediaperlog' className='button-nav'>Log</Link>
           <Link to='/' className='button-nav'>Back</Link>
         </div>
