@@ -4,14 +4,29 @@ import './ChangeDiaper.css';
 
 /** ChangeDiaper should POST a NEW DATA LOG to API Database **/
 /** ChangeDiaper is a FORM TYPE=RADIO */
-class ChangeDiaper extends React.Component {
-
-  handleSubmit = ev => {
-    ev.preventDefault();
-    console.log('WHICH BUTTON IS IT ???? submit button works!!!');
+class Button extends React.Component {
+  onClick(event) {
+    const value = event.target.value;
+    this.props.onSubmit(value);
   }
 
-  ///////////////////////////////////////////////////// THIS NEEDS SEPARATE DATA VALUE SUBMIT FOR EACH BUTTON
+  render() {
+    return (
+      <button 
+        className='button' 
+        value={this.props.value} 
+        onClick={e => this.onClick(e)}>
+          {this.props.value}
+      </button>
+    );
+  }
+}
+
+class ChangeDiaper extends React.Component {
+  onSubmit(value) {
+    // I have the button value here!
+    console.log(`ChangeDiaper ${value} button works!!!!`);
+  }
 
   render() {
     return (
@@ -22,13 +37,11 @@ class ChangeDiaper extends React.Component {
 
         <div className='flex-container'>
 
-          <form className='change-diaper-form' onSubmit={this.handleSubmit}>
-            <div className="flex-container">
-              <button className="button">Wet</button>
-              <button className="button">Poopy</button>
-              <button className="button">Both</button>
-            </div>
-          </form>
+          <div className="flex-container">
+            <Button value="Wet" onSubmit={this.onSubmit} />
+            <Button value="Poopy" onSubmit={this.onSubmit} />
+            <Button value="Both" onSubmit={this.onSubmit} />
+          </div>
 
           <div className='flex-container-row'>
             <Link to='/changediaperlog' className='button-nav'>Log</Link>
