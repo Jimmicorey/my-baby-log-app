@@ -4,29 +4,38 @@ import './BathTime.css';
 
 /** BathTime should POST a NEW DATA LOG to API Database **/
 /** BathTime is a FORM TYPE=RADIO */
+ class BathTime extends React.Component {
 
-function BathTime() {
-  return (
+  handleSubmit = ev => {
+    ev.preventDefault();
+    console.log('Bath Time submit button works!!!');
+  }
 
-    <div>
-      <header>
-        <h1>Last Time Baby Had A Bath</h1>
-        <p>00 / 00 / 0000</p>
-      </header>
+  render() {
+    return (
 
-      <div className='flex-container'>
-        <div className="flex-container">
-          <button className="button">Bath Time</button>
-        </div>
+      <div>
+        <header>
+          <h1>Last Time Baby Had A Bath</h1>
+          <p>00 / 00 / 0000</p>
+        </header>
 
-        <div className='flex-container-row'>
-          <Link to='/bathtimelog' className='button-nav'>Logs</Link>
-          <Link to='/' className='button-nav'>Back</Link>
+        <div className='flex-container'>
+          <form className='feed-me-form' onSubmit={this.handleSubmit}>
+            <div className="flex-container">
+              <button className="button">Bath Time</button>
+            </div>
+          </form>
+
+          <div className='flex-container-row'>
+            <Link to='/bathtimelog' className='button-nav'>Logs</Link>
+            <Link to='/' className='button-nav'>Back</Link>
+          </div>
         </div>
       </div>
-    </div>
 
-  );
+    );
+  }
 }
 
 export default BathTime;

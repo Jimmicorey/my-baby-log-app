@@ -4,27 +4,38 @@ import './FeedBaby.css';
 
 /** FeedBaby should POST a NEW DATA LOG to API Database **/
 /** FeedBaby is a FORM TYPE=RADIO */
+class FeedBaby extends React.Component {
 
-function FeedBaby() {
-  return (
+  handleSubmit = ev => {
+    ev.preventDefault();
+    console.log('Feed Me! submit button works!!!');
+  }
+  
+  render() {
+    return (
 
-    <div>
+      <div>
+        <h1>I'm Hungry!!</h1>
+        
+        <div className='flex-container'>
+          <form className='feed-me-form' onSubmit={this.handleSubmit}>
+            <div className="flex-container">
+              <button className="button">Feed Me!</button>
+            </div>
+          </form>
 
-      <h1>I'm Hungry!!</h1>
-
-      <div className='flex-container'>
-        <div className="flex-container">
-          <button className="button">Feed Me!</button>
-        </div>
-
-        <div className='flex-container-row'>
-          <Link to='/feedbabylog' className='button-nav'>Logs</Link>
-          <Link to='/' className='button-nav'>Back</Link>
+          <div className='flex-container-row'>
+            <Link to='/feedbabylog' className='button-nav'>Logs</Link>
+            <Link to='/' className='button-nav'>Back</Link>
+          </div>
         </div>
       </div>
-    </div>
 
-  );
+    );
+  }
 }
 
 export default FeedBaby;
+
+
+
