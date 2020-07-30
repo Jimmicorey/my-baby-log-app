@@ -8,16 +8,6 @@ import './BathTimeLog.css';
 
 function getBathTimeData(userId) {
   console.log(`getBathTimeData ${userId} runs`)
-  // return fetch(`${config.API_ENDPOINT}/${userId}/feedbabydata`, {
-  //   headers: {
-  //     'authorization': `basic ${TokenService.getAuthToken()}`,
-  //   },
-  // })
-  //   .then(res =>
-  //     (!res.ok)
-  //       ? res.json().then(e => Promise.reject(e))
-  //       : res.json()
-  //   )
 }
 
 class BathTimeLog extends React.Component {

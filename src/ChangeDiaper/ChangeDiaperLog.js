@@ -8,16 +8,6 @@ import './ChangeDiaperLog.css';
 
 function getChangeDiaperData(userId) {
   console.log(`getChangeDiaperData ${userId} runs`)
-  // return fetch(`${config.API_ENDPOINT}/${userId}/feedbabydata`, {
-  //   headers: {
-  //     'authorization': `basic ${TokenService.getAuthToken()}`,
-  //   },
-  // })
-  //   .then(res =>
-  //     (!res.ok)
-  //       ? res.json().then(e => Promise.reject(e))
-  //       : res.json()
-  //   )
 }
 
 class ChangeDiaperLog extends React.Component {
