@@ -20,11 +20,16 @@ function getFeedBabyData(userId) {
   //   )
 }
 
+const dummy_data_log = [
+  '01/01/20 9:30 AM'
+];
+
+
 class FeedBabyLog extends React.Component {
 
-  // state = {
-  //   "what goes in here???"
-  // }
+  state = {
+    data_log: dummy_data_log
+  }
 
   componentDidMount() {
     console.log('FeedBabyLog componentDidMount works!');
@@ -45,10 +50,7 @@ class FeedBabyLog extends React.Component {
         <div className='flex-container'>
 
           <ul>
-            <li>01/01/20 9:30 AM</li>
-            <li>01/01/20 10:30 AM</li>
-            <li>01/01/20 11:30 AM</li>
-            <li>01/01/20 12:30 PM</li>
+            <li>{this.state.data_log}</li>
             <li>{this.renderFeedBabyData()}</li>
           </ul>
 
