@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './FeedBabyLog.css';
 
-/** FeedBabyLog should GET (fetch) DATALOGS from API(database) **/
-/** FeedBabyLog should render LIST (array) of DATALOGS from API(database) 
- *  FeedBabyLog should render 10 MOST RECENT logs **/
+// FeedBabyLog should GET (fetch) DATALOGS from API(database)
+// FeedBabyLog should render LIST (array) of DATALOGS from API(database) 
+// FeedBabyLog should render 10 MOST RECENT logs
 
 function getFeedBabyData(userId) {
   console.log(`getFeedBabyData ${userId} runs`)
@@ -21,14 +21,13 @@ function getFeedBabyData(userId) {
 }
 
 const dummy_data_log = [
-  '01/01/20 9:30 AM'
+  '01/01/20 9:30 AM',
 ];
-
 
 class FeedBabyLog extends React.Component {
 
   state = {
-    data_log: dummy_data_log
+    data_log: dummy_data_log,
   }
 
   componentDidMount() {
