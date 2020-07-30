@@ -20,18 +20,6 @@ function getBathTimeData(userId) {
   //   )
 }
 
-
-// const DummyData = [
-//   "01/01/20 7:30 PM", 
-//   "01/04/20 6:30 PM", 
-//   "01/07/20 7:00 PM"
-// ]
-
-// const DataLog = DummyData.map((data) =>
-//   <li>{data}</li>
-// );
-
-
 class BathTimeLog extends React.Component {
 
   // state = {
@@ -41,6 +29,11 @@ class BathTimeLog extends React.Component {
   componentDidMount() {
     console.log('BathTimeLog componentDidMount works!');
     getBathTimeData('userId is 12345');
+  }
+
+  renderBathTimeData() {
+    console.log('renderBathTimeData runs');
+    return 'SOME MORE DATA';
   }
   
   render() {
@@ -55,6 +48,7 @@ class BathTimeLog extends React.Component {
             <li>01/01/20 7:30 PM</li>
             <li>01/04/20 6:30 PM</li>
             <li>01/07/20 7:00 PM</li>
+            <li>{this.renderBathTimeData()}</li>
           </ul>
 
           <div className='flex-container-row'>

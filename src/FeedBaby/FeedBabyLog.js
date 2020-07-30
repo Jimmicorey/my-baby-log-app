@@ -20,18 +20,6 @@ function getFeedBabyData(userId) {
   //   )
 }
 
-
-// const DummyData = [
-//   "01/01/20 9:30 AM", 
-//   "01/01/20 10:30 AM", 
-//   "01/01/20 11:30 AM",
-//   "01/01/20 12:30 PM"
-// ]
-
-// const DataLog = DummyData.map((data) =>
-//   <li>{data}</li>
-// );
-
 class FeedBabyLog extends React.Component {
 
   // state = {
@@ -41,6 +29,11 @@ class FeedBabyLog extends React.Component {
   componentDidMount() {
     console.log('FeedBabyLog componentDidMount works!');
     getFeedBabyData('userId is 12345');
+  }
+
+  renderFeedBabyData() {
+    console.log('renderFeedBabyData runs');
+    return 'SOME MORE DATA';
   }
 
   render() {
@@ -56,6 +49,7 @@ class FeedBabyLog extends React.Component {
             <li>01/01/20 10:30 AM</li>
             <li>01/01/20 11:30 AM</li>
             <li>01/01/20 12:30 PM</li>
+            <li>{this.renderFeedBabyData()}</li>
           </ul>
 
           <div className='flex-container-row'>

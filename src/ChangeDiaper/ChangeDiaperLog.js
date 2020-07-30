@@ -20,18 +20,6 @@ function getChangeDiaperData(userId) {
   //   )
 }
 
-
-// const DummyData = [
-//   "01/01/20 9:30 AM Poopy", 
-//   "01/01/20 10:30 AM Wet", 
-//   "01/01/20 11:30 AM Both"
-// ]
-
-// const DataLog = DummyData.map((data) =>
-//   <li>{data}</li>
-// );
-
-
 class ChangeDiaperLog extends React.Component {
 
   // state = {
@@ -42,6 +30,12 @@ class ChangeDiaperLog extends React.Component {
     console.log('ChangeDiaperLog componentDidMount works!');
     getChangeDiaperData('userId is 12345');
   }
+
+  renderChangeDiaperData() {
+    console.log('renderChangeDiaperData runs');
+    return 'SOME MORE DATA';
+  }
+
   render() {
     return (
 
@@ -50,9 +44,12 @@ class ChangeDiaperLog extends React.Component {
     
         <div className='flex-container'>
 
-          <li>01/01/20 9:30 AM Poopy</li>
-          <li>01/01/20 10:30 AM Wet</li>
-          <li>01/01/20 11:30 AM Both</li>
+          <ul>
+            <li>01/01/20 9:30 AM Poopy</li>
+            <li>01/01/20 10:30 AM Wet</li>
+            <li>01/01/20 11:30 AM Both</li>
+            <li>{this.renderChangeDiaperData()}</li>
+          </ul>
 
           <div className='flex-container-row'>
             <Link to='/changediaper' className='button-nav'>Back</Link>
