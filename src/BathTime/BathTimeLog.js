@@ -6,25 +6,29 @@ import './BathTimeLog.css';
 /** BathTimeLog should render LIST (array) of DATALOGS from API(database) 
  *  BathTimeLog should render 10 MOST RECENT logs **/
 
-function getBathTimeData(userId) {
-  console.log(`getBathTimeData ${userId} runs`)
-}
+
 
 class BathTimeLog extends React.Component {
 
-  // state = {
-  //   "what goes in here???"
-  // }
+  /* DUMMY DATA PLACEHOLDER CODE TO SHOW FUNCTIONING GET REQ *////////////////////////
+  state = {
+    loading: true,
+    person: null
+  }
+  /* //////////////////////////////////////////////////////////////////////////// */
 
-  componentDidMount() {
-    console.log('BathTimeLog componentDidMount works!');
-    getBathTimeData('userId is 12345');
+  async componentDidMount() {
+    console.log('FeedBabyLog componentDidMount works!');
+
+    /* DUMMY DATA PLACEHOLDER CODE TO SHOW FUNCTIONING GET REQ */
+    const url = "https://api.randomuser.me/";
+    const response = await fetch(url);
+    const data = await response.json();
+    this.setState({ person: data.results[0], loading: false });
+    /* /////////////////////////////////////////////////////////////////////////// */
+
   }
 
-  renderBathTimeData() {
-    console.log('renderBathTimeData runs');
-    return 'SOME MORE DATA';
-  }
   
   render() {
     return (
@@ -34,12 +38,22 @@ class BathTimeLog extends React.Component {
     
         <div className='flex-container'>
 
-          <ul>
-            <li>01/01/20 7:30 PM</li>
-            <li>01/04/20 6:30 PM</li>
-            <li>01/07/20 7:00 PM</li>
-            <li>{this.renderBathTimeData()}</li>
-          </ul>
+
+          {/* DUMMY DATA PLACEHOLDER CODE TO SHOW FUNCTIONING GET REQ //////////////////*/}
+          <div>
+            {this.state.loading || !this.state.person ? (
+              <div>loading...</div>
+            ) : (
+              <div>
+                <div>{this.state.person.name.title}</div>
+                <div>{this.state.person.name.first}</div>
+                <div>{this.state.person.name.last}</div>
+              </div>
+            )}
+          </div>
+          {/* ///////////////////////////////////////////////////////////////////// */}
+
+
 
           <div className='flex-container-row'>
             <Link to='/bathtime' className='button-nav'>Back</Link>
@@ -53,3 +67,23 @@ class BathTimeLog extends React.Component {
 }
 
 export default BathTimeLog;
+
+
+
+
+
+
+
+// function getBathTimeData(userId) {
+//   console.log(`getBathTimeData ${userId} runs`)
+// }
+
+// componentDidMount() {
+//   console.log('BathTimeLog componentDidMount works!');
+//   getBathTimeData('userId is 12345');
+// }
+
+// renderBathTimeData() {
+//   console.log('renderBathTimeData runs');
+//   return 'SOME MORE DATA';
+// }

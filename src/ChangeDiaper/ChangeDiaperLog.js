@@ -6,25 +6,29 @@ import './ChangeDiaperLog.css';
 /** ChangeDiaperLog should render LIST (array) of DATALOGS from API(database) 
  *  ChangeDiaperLog should render 10 MOST RECENT logs **/
 
-function getChangeDiaperData(userId) {
-  console.log(`getChangeDiaperData ${userId} runs`)
-}
 
 class ChangeDiaperLog extends React.Component {
 
-  // state = {
-  //   "what goes in here???"
-  // }
 
-  componentDidMount() {
-    console.log('ChangeDiaperLog componentDidMount works!');
-    getChangeDiaperData('userId is 12345');
+  /* DUMMY DATA PLACEHOLDER CODE TO SHOW FUNCTIONING GET REQ *////////////////////////
+  state = {
+    loading: true,
+    person: null
+  }
+  /* //////////////////////////////////////////////////////////////////////////// */
+
+  async componentDidMount() {
+    console.log('FeedBabyLog componentDidMount works!');
+
+    /* DUMMY DATA PLACEHOLDER CODE TO SHOW FUNCTIONING GET REQ */
+    const url = "https://api.randomuser.me/";
+    const response = await fetch(url);
+    const data = await response.json();
+    this.setState({ person: data.results[0], loading: false });
+    /* /////////////////////////////////////////////////////////////////////////// */
+
   }
 
-  renderChangeDiaperData() {
-    console.log('renderChangeDiaperData runs');
-    return 'SOME MORE DATA';
-  }
 
   render() {
     return (
@@ -34,12 +38,22 @@ class ChangeDiaperLog extends React.Component {
     
         <div className='flex-container'>
 
-          <ul>
-            <li>01/01/20 9:30 AM Poopy</li>
-            <li>01/01/20 10:30 AM Wet</li>
-            <li>01/01/20 11:30 AM Both</li>
-            <li>{this.renderChangeDiaperData()}</li>
-          </ul>
+
+          {/* DUMMY DATA PLACEHOLDER CODE TO SHOW FUNCTIONING GET REQ //////////////////*/}
+          <div>
+            {this.state.loading || !this.state.person ? (
+              <div>loading...</div>
+            ) : (
+              <div>
+                <div>{this.state.person.name.title}</div>
+                <div>{this.state.person.name.first}</div>
+                <div>{this.state.person.name.last}</div>
+              </div>
+            )}
+          </div>
+          {/* ///////////////////////////////////////////////////////////////////// */}
+
+
 
           <div className='flex-container-row'>
             <Link to='/changediaper' className='button-nav'>Back</Link>
@@ -55,3 +69,27 @@ class ChangeDiaperLog extends React.Component {
 export default ChangeDiaperLog;
 
 
+
+
+
+
+
+
+
+
+
+
+
+// function getChangeDiaperData(userId) {
+//   console.log(`getChangeDiaperData ${userId} runs`)
+// }
+
+// componentDidMount() {
+//   console.log('ChangeDiaperLog componentDidMount works!');
+//   getChangeDiaperData('userId is 12345');
+// }
+
+// renderChangeDiaperData() {
+//   console.log('renderChangeDiaperData runs');
+//   return 'SOME MORE DATA';
+// }

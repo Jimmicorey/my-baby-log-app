@@ -9,6 +9,7 @@ import './FeedBabyLog.css';
 
 class FeedBabyLog extends React.Component {
 
+
   /* DUMMY DATA PLACEHOLDER CODE TO SHOW FUNCTIONING GET REQ *////////////////////////
   state = {
     loading: true,
@@ -18,8 +19,6 @@ class FeedBabyLog extends React.Component {
 
   async componentDidMount() {
     console.log('FeedBabyLog componentDidMount works!');
-    // getFeedBabyData('userId is 12345');
-
 
     /* DUMMY DATA PLACEHOLDER CODE TO SHOW FUNCTIONING GET REQ */
     const url = "https://api.randomuser.me/";
@@ -29,6 +28,7 @@ class FeedBabyLog extends React.Component {
     /* /////////////////////////////////////////////////////////////////////////// */
 
   }
+  
 
   render() {
     return (
