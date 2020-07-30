@@ -6,33 +6,29 @@ import './FeedBabyLog.css';
 // FeedBabyLog should render LIST (array) of DATALOGS from API(database) 
 // FeedBabyLog should render 10 MOST RECENT logs
 
-function getFeedBabyData(userId) {
-  console.log(`getFeedBabyData ${userId} runs`)
-  // return fetch(`${config.API_ENDPOINT}/${userId}/feedbabydata`, {
-  //   headers: {
-  //     'authorization': `basic ${TokenService.getAuthToken()}`,
-  //   },
-  // })
-  //   .then(res =>
-  //     (!res.ok)
-  //       ? res.json().then(e => Promise.reject(e))
-  //       : res.json()
-  //   )
-}
-
-const dummy_data_log = [
-  '01/01/20 9:30 AM',
-];
 
 class FeedBabyLog extends React.Component {
 
+  /* DUMMY DATA PLACEHOLDER CODE TO SHOW FUNCTIONING GET REQ *////////////////////////
   state = {
-    data_log: dummy_data_log,
+    loading: true,
+    person: null
   }
+  /* //////////////////////////////////////////////////////////////////////////// */
 
-  componentDidMount() {
+  async componentDidMount() {
     console.log('FeedBabyLog componentDidMount works!');
-    getFeedBabyData('userId is 12345');
+    // getFeedBabyData('userId is 12345');
+
+
+    /* DUMMY DATA PLACEHOLDER CODE TO SHOW FUNCTIONING GET REQ */
+    const url = "https://api.randomuser.me/";
+    const response = await fetch(url);
+    const data = await response.json();
+    this.setState({ person: data.results[0], loading: false });
+    /* /////////////////////////////////////////////////////////////////////////// */
+
+
   }
 
   renderFeedBabyData() {
@@ -48,10 +44,22 @@ class FeedBabyLog extends React.Component {
     
         <div className='flex-container'>
 
-          <ul>
-            <li>{this.state.data_log}</li>
-            <li>{this.renderFeedBabyData()}</li>
-          </ul>
+
+          {/* DUMMY DATA PLACEHOLDER CODE TO SHOW FUNCTIONING GET REQ //////////////////*/}
+          <div>
+            {this.state.loading || !this.state.person ? (
+              <div>loading...</div>
+            ) : (
+              <div>
+                <div>{this.state.person.name.title}</div>
+                <div>{this.state.person.name.first}</div>
+                <div>{this.state.person.name.last}</div>
+              </div>
+            )}
+          </div>
+          {/* ///////////////////////////////////////////////////////////////////// */}
+
+
 
           <div className='flex-container-row'>
             <Link to='/feedbaby' className='button-nav'>Back</Link>
@@ -65,3 +73,21 @@ class FeedBabyLog extends React.Component {
 }
 
 export default FeedBabyLog;
+
+
+
+
+/*function getFeedBabyData(userId) {
+  // console.log(`getFeedBabyData ${userId} runs`)
+
+  // return fetch(`${config.API_ENDPOINT}/${userId}/feedbabydata`, {
+  //   headers: {
+  //     'authorization': `basic ${TokenService.getAuthToken()}`,
+  //   },
+  // })
+  //   .then(res =>
+  //     (!res.ok)
+  //       ? res.json().then(e => Promise.reject(e))
+  //       : res.json()
+  //   )
+} */
