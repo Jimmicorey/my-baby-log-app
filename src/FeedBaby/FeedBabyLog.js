@@ -28,12 +28,6 @@ class FeedBabyLog extends React.Component {
     this.setState({ person: data.results[0], loading: false });
     /* /////////////////////////////////////////////////////////////////////////// */
 
-
-  }
-
-  renderFeedBabyData() {
-    console.log('renderFeedBabyData runs');
-    return 'SOME MORE DATA';
   }
 
   render() {
@@ -77,17 +71,33 @@ export default FeedBabyLog;
 
 
 
-/*function getFeedBabyData(userId) {
-  // console.log(`getFeedBabyData ${userId} runs`)
 
-  // return fetch(`${config.API_ENDPOINT}/${userId}/feedbabydata`, {
-  //   headers: {
-  //     'authorization': `basic ${TokenService.getAuthToken()}`,
-  //   },
-  // })
-  //   .then(res =>
-  //     (!res.ok)
-  //       ? res.json().then(e => Promise.reject(e))
-  //       : res.json()
-  //   )
-} */
+
+
+
+
+
+
+
+
+
+
+// function getFeedBabyData(userId) {
+//   console.log(`getFeedBabyData ${userId} runs`)
+
+//   return fetch(`${config.API_ENDPOINT}/${userId}/feedbabydata`, {
+//     headers: {
+//       'authorization': `basic ${TokenService.getAuthToken()}`,
+//     },
+//   })
+//     .then(res =>
+//       (!res.ok)
+//         ? res.json().then(e => Promise.reject(e))
+//         : res.json()
+//     )
+// }
+
+  // renderFeedBabyData() {
+  //   console.log('renderFeedBabyData runs');
+  //   return 'SOME MORE DATA';
+  // }
