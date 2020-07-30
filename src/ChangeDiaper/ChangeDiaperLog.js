@@ -3,10 +3,22 @@ import { Link } from 'react-router-dom';
 import './ChangeDiaperLog.css';
 
 /** ChangeDiaperLog should GET (fetch) DATALOGS from API(database) **/
-/** ChangeDiaperLog should POST a NEW DATALOG to API(database) 
- *  per ChangeDiaper (form submit) **/
 /** ChangeDiaperLog should render LIST (array) of DATALOGS from API(database) 
  *  ChangeDiaperLog should render 10 MOST RECENT logs **/
+
+function getChangeDiaperData(userId) {
+  console.log(`getChangeDiaperData ${userId} runs`)
+  // return fetch(`${config.API_ENDPOINT}/${userId}/feedbabydata`, {
+  //   headers: {
+  //     'authorization': `basic ${TokenService.getAuthToken()}`,
+  //   },
+  // })
+  //   .then(res =>
+  //     (!res.ok)
+  //       ? res.json().then(e => Promise.reject(e))
+  //       : res.json()
+  //   )
+}
 
 
 // const DummyData = [
@@ -27,7 +39,8 @@ class ChangeDiaperLog extends React.Component {
   // }
 
   componentDidMount() {
-    console.log('ChangeDiaperLog componentDidMount works!')
+    console.log('ChangeDiaperLog componentDidMount works!');
+    getChangeDiaperData('userId is 12345');
   }
   render() {
     return (

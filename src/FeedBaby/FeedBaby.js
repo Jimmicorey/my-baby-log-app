@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './FeedBaby.css';
 
-/** FeedBaby should POST a NEW DATA LOG to API Database **/
-/** FeedBaby is a FORM TYPE=RADIO */
+/** FeedBaby should POST a NEW DATALOG to API(database) 
+ *  per FeedBaby (form submit) **/
 class FeedBaby extends React.Component {
 
   handleSubmit = ev => {

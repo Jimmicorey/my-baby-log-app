@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './BathTime.css';
 
-/** BathTime should POST a NEW DATA LOG to API Database **/
-/** BathTime is a FORM TYPE=RADIO */
+/** BathTimeLog should POST a NEW DATALOG to API(database) 
+ *  per BathTime (form submit) **/
  class BathTime extends React.Component {
 
   handleSubmit = ev => {

@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './ChangeDiaper.css';
 
-/** ChangeDiaper should POST a NEW DATA LOG to API Database **/
-/** ChangeDiaper is a FORM TYPE=RADIO */
+/** ChangeDiaperLog should POST a NEW DATALOG to API(database) 
+ *  per ChangeDiaper (form submit) **/
 class Button extends React.Component {
   onClick(event) {
     const value = event.target.value;

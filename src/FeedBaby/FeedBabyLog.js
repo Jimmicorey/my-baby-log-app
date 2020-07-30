@@ -3,10 +3,22 @@ import { Link } from 'react-router-dom';
 import './FeedBabyLog.css';
 
 /** FeedBabyLog should GET (fetch) DATALOGS from API(database) **/
-/** FeedBabyLog should POST a NEW DATALOG to API(database) 
- *  per FeedBaby (form submit) **/
 /** FeedBabyLog should render LIST (array) of DATALOGS from API(database) 
  *  FeedBabyLog should render 10 MOST RECENT logs **/
+
+function getFeedBabyData(userId) {
+  console.log(`getFeedBabyData ${userId} runs`)
+  // return fetch(`${config.API_ENDPOINT}/${userId}/feedbabydata`, {
+  //   headers: {
+  //     'authorization': `basic ${TokenService.getAuthToken()}`,
+  //   },
+  // })
+  //   .then(res =>
+  //     (!res.ok)
+  //       ? res.json().then(e => Promise.reject(e))
+  //       : res.json()
+  //   )
+}
 
 
 // const DummyData = [
@@ -27,7 +39,8 @@ class FeedBabyLog extends React.Component {
   // }
 
   componentDidMount() {
-    console.log('FeedBabyLog componentDidMount works!')
+    console.log('FeedBabyLog componentDidMount works!');
+    getFeedBabyData('userId is 12345');
   }
 
   render() {

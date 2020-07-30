@@ -3,10 +3,22 @@ import { Link } from 'react-router-dom';
 import './BathTimeLog.css';
 
 /** BathTimeLog should GET (fetch) DATALOGS from API(database) **/
-/** BathTimeLog should POST a NEW DATALOG to API(database) 
- *  per BathTime (form submit) **/
 /** BathTimeLog should render LIST (array) of DATALOGS from API(database) 
  *  BathTimeLog should render 10 MOST RECENT logs **/
+
+function getBathTimeData(userId) {
+  console.log(`getBathTimeData ${userId} runs`)
+  // return fetch(`${config.API_ENDPOINT}/${userId}/feedbabydata`, {
+  //   headers: {
+  //     'authorization': `basic ${TokenService.getAuthToken()}`,
+  //   },
+  // })
+  //   .then(res =>
+  //     (!res.ok)
+  //       ? res.json().then(e => Promise.reject(e))
+  //       : res.json()
+  //   )
+}
 
 
 // const DummyData = [
@@ -27,7 +39,8 @@ class BathTimeLog extends React.Component {
   // }
 
   componentDidMount() {
-    console.log('BathTimeLog componentDidMount works!')
+    console.log('BathTimeLog componentDidMount works!');
+    getBathTimeData('userId is 12345');
   }
   
   render() {
