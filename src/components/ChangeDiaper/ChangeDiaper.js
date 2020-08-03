@@ -1,14 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ChangeDiaper.css';
+import DatalogsApiService from '../../services/datalogs-api-service';
 
 /** ChangeDiaperLog should POST a NEW DATALOG to API(database) 
  *  per ChangeDiaper (form submit) **/
 class Button extends React.Component {
+
+////////////////////////////////////////////////////////////////////////////////////  
+///////////////////////////////////////////////  REQUIRES CONDITIONALS !!!!!!!!!!!!!
+
   onClick(event) {
     const value = event.target.value;
     this.props.onSubmit(value);
   }
+  
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log('Feed Me! submit button works!!!');
+    DatalogsApiService.postNewDatalog('NEW FEED');
+  }
+///////////////////////////////////////////////  REQUIRES CONDITIONALS !!!!!!!!!!!!!
+////////////////////////////////////////////////////////////////////////////////////
 
   render() {
     return (

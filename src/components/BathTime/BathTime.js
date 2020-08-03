@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './BathTime.css';
+import DatalogsApiService from '../../services/datalogs-api-service';
 
-/** BathTimeLog should POST a NEW DATALOG to API(database) 
- *  per BathTime (form submit) **/
- class BathTime extends React.Component {
+class BathTime extends React.Component {
 
-  handleSubmit = ev => {
-    ev.preventDefault();
+////////////////////////////////////////////////////////////////////////////////////  
+//////////////////////////////////////////////////////////    IT WORKS !!!!!!!!!!!!!
+  handleSubmit(e) {
+    e.preventDefault();
     console.log('Bath Time submit button works!!!');
+    DatalogsApiService.postNewDatalog('NEW BATH');
   }
+//////////////////////////////////////////////////////////    IT WORKS !!!!!!!!!!!!!
+////////////////////////////////////////////////////////////////////////////////////
 
   render() {
     return (
