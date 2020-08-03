@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './FeedBaby.css';
+import DatalogsApiService from '../../services/datalogs-api-service';
 
-/** FeedBaby should POST a NEW DATALOG to API(database) 
- *  per FeedBaby (form submit) **/
 class FeedBaby extends React.Component {
 
-  handleSubmit = ev => {
-    ev.preventDefault();
+////////////////////////////////////////////////////////////////////////////////////  
+//////////////////////////////////////////////////////////    IT WORKS !!!!!!!!!!!!!
+  handleSubmit(e) {
+    e.preventDefault();
     console.log('Feed Me! submit button works!!!');
+    DatalogsApiService.postNewDatalog('NEW FEED');
   }
+//////////////////////////////////////////////////////////    IT WORKS !!!!!!!!!!!!!
+////////////////////////////////////////////////////////////////////////////////////
   
   render() {
     return (
@@ -36,6 +40,3 @@ class FeedBaby extends React.Component {
 }
 
 export default FeedBaby;
-
-
-

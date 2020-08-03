@@ -57,9 +57,22 @@ const DatalogsApiService = {
                 : res.json()
         )
     },
+
+    //POST NEW DATA LOGS - ENDPOINT 4-1
+    postNewDatalog(newEvent) {
+        console.log(`postNewDatalog ${newEvent} works`);
+        return fetch(`${config.API_ENDPOINT}/feedbabydata`, {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({event_category: newEvent})
+        })
+          .then(res => res.json())
+    }
 }
 
 export default DatalogsApiService;
+
+
 
 
 
