@@ -3,43 +3,58 @@ import { Link } from 'react-router-dom';
 import './ChangeDiaper.css';
 import DatalogsApiService from '../../services/datalogs-api-service';
 
-/** ChangeDiaperLog should POST a NEW DATALOG to API(database) 
- *  per ChangeDiaper (form submit) **/
-class Button extends React.Component {
-
 ////////////////////////////////////////////////////////////////////////////////////  
-///////////////////////////////////////////////  REQUIRES CONDITIONALS !!!!!!!!!!!!!
+//////////////////   MULTI-BUTTON OPTION NOT WORKING YET   ///////////////////////// 
+// class Button extends React.Component {
 
-  onClick(event) {
-    const value = event.target.value;
-    this.props.onSubmit(value);
-  }
-  
-  handleSubmit(e) {
-    e.preventDefault();
-    console.log('Feed Me! submit button works!!!');
-    DatalogsApiService.postNewDatalog('NEW FEED');
-  }
-///////////////////////////////////////////////  REQUIRES CONDITIONALS !!!!!!!!!!!!!
-////////////////////////////////////////////////////////////////////////////////////
+// /** ChangeDiaperLog should POST a NEW DATALOG to API(database) 
+//  *  per ChangeDiaper (form submit) **/
 
-  render() {
-    return (
-      <button 
-        className='button' 
-        value={this.props.value} 
-        onClick={e => this.onClick(e)}>
-          {this.props.value}
-      </button>
-    );
-  }
-}
+//   onClick(event) {
+//     const value = event.target.value;
+//     this.props.onSubmit(value);
+//   }
+
+//   render() {
+//     return (
+//       <button 
+//         className='button' 
+//         value={this.props.value} 
+//         onClick={e => this.onClick(e)}>
+//           {this.props.value}
+//       </button>
+//     );
+//   }
+// }
+//////////////////   MULTI-BUTTON OPTION NOT WORKING YET   /////////////////////////  
+//////////////////////////////////////////////////////////////////////////////////// 
 
 class ChangeDiaper extends React.Component {
-  onSubmit(value) {
-    // I have the button value here!
-    console.log(`ChangeDiaper ${value} button works!!!!`);
+////////////////////////////////////////////////////////////////////////////////////  
+//////////////////   MULTI-BUTTON OPTION NOT WORKING YET   ///////////////////////// 
+  // onSubmit(e, value) {
+  // //   //I have the button value here!
+  // //   console.log(`ChangeDiaper ${value} button works!!!!`);
+  // // }
+  // // handleSubmit(e) {
+  //   e.preventDefault();
+    
+  //   console.log(`ChangeDiaper ${value} button works!!!!`);
+  //   DatalogsApiService.postNewDatalog(`NEW ${value} DIAPER`);
+  // }
+//////////////////   MULTI-BUTTON OPTION NOT WORKING YET   /////////////////////////  
+//////////////////////////////////////////////////////////////////////////////////// 
+
+
+////////////////////////////////////////////////////////////////////////////////////  
+///////////////////////////////////////// SINGLE BUTTON NEW DIAPER   IT WORKS !!!!!!
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log('Change Diaper submit button works!!!');
+    DatalogsApiService.postNewDatalog('NEW DIAPER');
   }
+///////////////////////////////////////// SINGLE BUTTON NEW DIAPER   IT WORKS !!!!!!
+////////////////////////////////////////////////////////////////////////////////////
 
   render() {
     return (
@@ -49,12 +64,18 @@ class ChangeDiaper extends React.Component {
         <h1>How was my diaper?</h1>
 
         <div className='flex-container'>
+          {/* SINGLE BUTTON - SINGLE EVENT SOLUTION */}
+          <form className='feed-me-form' onSubmit={this.handleSubmit}>
+            <div className="flex-container">
+              <button className="button">Change Diaper</button>
+            </div>
+          </form>
 
-          <div className="flex-container">
+          {/* <div className="flex-container">
             <Button value="Wet" onSubmit={this.onSubmit} />
             <Button value="Poopy" onSubmit={this.onSubmit} />
             <Button value="Both" onSubmit={this.onSubmit} />
-          </div>
+          </div> */}
 
           <div className='flex-container-row'>
             <Link to='/changediaperlog' className='button-nav'>Log</Link>
