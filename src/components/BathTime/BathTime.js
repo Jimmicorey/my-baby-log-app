@@ -16,12 +16,17 @@ class BathTime extends React.Component {
 ////////////////////////////////////////////////////////////////////////////////////
 
   render() {
+
+    const date = new Date(); //<--- this is not returning the correct values yet!!!
+
     return (
 
       <div>
         <header>
           <h1>Last Time Baby Had A Bath</h1>
-          <p>00 / 00 / 0000</p>
+          <p className='date'>
+              {date.toLocaleDateString()}
+          </p>
         </header>
 
         <div className='flex-container'>
