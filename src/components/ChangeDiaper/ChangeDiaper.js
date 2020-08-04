@@ -78,7 +78,7 @@ class ChangeDiaper extends React.Component {
           </div> */}
 
           <div className='flex-container-row'>
-            <Link to='/changediaperlog' className='button-nav'>Log</Link>
+            <Link to='/changediaperlog' className='button-nav'>Logs</Link>
             <Link to='/' className='button-nav'>Back</Link>
           </div>
 
