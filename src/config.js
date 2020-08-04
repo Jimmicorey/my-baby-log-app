@@ -2,7 +2,7 @@ export default {
   //API_ENDPOINT: 'http://localhost:8000/api/datalogs', 
 
   //LIVE SERVER AT THE FOLLOWING
-  API_ENDPOINT: `https://my-baby-log-api.herokuapp.com/`,
+  API_ENDPOINT: `https://my-baby-log-api.herokuapp.com/api/`,
  
   
   //TOKEN_KEY: 'my-baby-log-auth-token', <<---- STRETCH GOAL --->>
