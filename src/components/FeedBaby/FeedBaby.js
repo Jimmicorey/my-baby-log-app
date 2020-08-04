@@ -10,7 +10,7 @@ class FeedBaby extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log('Feed Me! submit button works!!!');
-    DatalogsApiService.postNewDatalog('NEW FEED');
+    DatalogsApiService.postNewDatalog('FEED');
   }
 //////////////////////////////////////////////////////////    IT WORKS !!!!!!!!!!!!!
 ////////////////////////////////////////////////////////////////////////////////////

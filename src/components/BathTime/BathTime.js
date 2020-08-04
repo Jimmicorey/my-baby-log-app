@@ -10,7 +10,7 @@ class BathTime extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log('Bath Time submit button works!!!');
-    DatalogsApiService.postNewDatalog('NEW BATH');
+    DatalogsApiService.postNewDatalog('BATH');
   }
 //////////////////////////////////////////////////////////    IT WORKS !!!!!!!!!!!!!
 ////////////////////////////////////////////////////////////////////////////////////
@@ -18,6 +18,7 @@ class BathTime extends React.Component {
   render() {
 
     const date = new Date(); //<--- this is not returning the correct values yet!!!
+    //use STATE to pull from LAST BATH ENTRY (using [index]) 
 
     return (
 

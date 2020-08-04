@@ -16,6 +16,7 @@ class FeedBabyLog extends React.Component {
 
   componentDidMount() {
     console.log('FeedBabyLog componentDidMount works!');
+
   
     fetch('http://localhost:8000/api/datalogs/feedbabydata')
     .then(res => res.json())
@@ -23,9 +24,17 @@ class FeedBabyLog extends React.Component {
       this.setState({datalogs});
       console.log(datalogs);
     }); 
+
   }
 
+
+  
+
   render() {
+
+    
+
+
     return (
       <div>
           <h1>FEED BABY LOG</h1>
@@ -34,7 +43,7 @@ class FeedBabyLog extends React.Component {
           <ul>
             {this.state.datalogs.map(d => 
               <li key={d.id}> 
-                {d.event_category} {d.date_created}
+                {d.event_category} - {new Date(d.date_created).toLocaleString()}
               </li>
             )}
           </ul>

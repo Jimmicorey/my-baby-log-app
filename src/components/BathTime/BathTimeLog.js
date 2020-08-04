@@ -34,7 +34,7 @@ class BathTimeLog extends React.Component {
         <ul>
             {this.state.datalogs.map(d => 
               <li key={d.id}> 
-                {d.event_category} {d.date_created}
+                {d.event_category} - {new Date(d.date_created).toLocaleString()}
               </li>
             )}
           </ul>
