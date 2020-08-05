@@ -12,7 +12,7 @@ function FeedBabyTimer() {
 
     return (
         <div className="flex-container">
-            <h1 className='timer-text'>Last Time Baby Was Fed</h1>
+            <p className='timer-text'>Last Time Baby Was Fed</p>
             <p className='timer'>
                 {date.toLocaleTimeString()}
             </p>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 /* 
 font-family: 'Balsamiq Sans', cursive;
@@ -15,31 +15,50 @@ header {
     margin-bottom: -50px;
 }
 
-h1 {
+/* h1 {
     text-align: center;
     padding: 10px 70px;
     font-size: 30px;
-}
+} */
 
 .timer-text {
-    margin-top: -10px;
-    padding: 0 20px;
-    font-size: 40px;
+    margin: -20px 0 25px;
+    padding: 10px;
+    text-align: center;
+    width: 200%;
+    background-color: #6f00cae8;
+    border: 15px solid #fc62efc4;
+    
+
+    color: #fde17c;
+    font-style: oblique;
+    font-weight: 900;
+    font-size: 26px;
+    text-transform: lowercase;
+    line-height: 1.125em;
+    word-spacing: 2px;
 }
 
 .timer {
     text-align: center;
-    font-size: 40px;
-    margin: -10px 0 30px;
-    width: 100%;
-    padding: 10px;
-    background-color: lightgray;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #fde17c;
+    
+    margin: -5px 0 30px;
+    width: 200%;
+    padding: 5px;
+    background-color: #6f00cae8;
+    border: 15px solid #fc62efc4;
 }
+
 
 h2 {
     background-color: lightgray;
     padding: 10px;
 }
+
 
 main, .flex-container {
     display: flex;
@@ -75,7 +94,7 @@ a:hover {
     height: 100px;
     text-align: center;
     padding: 35px;
-    margin: 0 0 35px 0;
+    margin: 0 0 45px 0;
     font-family: 'Balsamiq Sans', cursive;
     font-size: 35px; 
     font-weight: 700;
