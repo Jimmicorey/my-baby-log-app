@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ChangeDiaperLog.css';
+import config from '../../config';
 
 /** 
  * ChangeDiaperLog should render 10 MOST RECENT logs 
@@ -17,7 +18,7 @@ class ChangeDiaperLog extends React.Component {
   componentDidMount() {
     console.log('ChangeDiaperLog componentDidMount works!');
     
-    fetch('http://localhost:8000/api/datalogs/changediaperdata')
+    fetch(`${config.API_ENDPOINT}/changediaperdata`)
     .then(res => res.json())
     .then( datalogs => {
       this.setState({datalogs});
