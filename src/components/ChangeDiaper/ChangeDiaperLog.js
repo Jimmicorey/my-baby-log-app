@@ -51,32 +51,3 @@ class ChangeDiaperLog extends React.Component {
 }
 
 export default ChangeDiaperLog;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function getChangeDiaperData(userId) {
-//   console.log(`getChangeDiaperData ${userId} runs`)
-// }
-
-// componentDidMount() {
-//   console.log('ChangeDiaperLog componentDidMount works!');
-//   getChangeDiaperData('userId is 12345');
-// }
-
-// renderChangeDiaperData() {
-//   console.log('renderChangeDiaperData runs');
-//   return 'SOME MORE DATA';
-// }

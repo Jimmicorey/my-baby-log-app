@@ -5,15 +5,11 @@ import DatalogsApiService from '../../services/datalogs-api-service';
 
 class BathTime extends React.Component {
 
-////////////////////////////////////////////////////////////////////////////////////  
-//////////////////////////////////////////////////////////    IT WORKS !!!!!!!!!!!!!
   handleSubmit(e) {
     e.preventDefault();
     console.log('Bath Time submit button works!!!');
     DatalogsApiService.postNewDatalog('BATH');
   }
-//////////////////////////////////////////////////////////    IT WORKS !!!!!!!!!!!!!
-////////////////////////////////////////////////////////////////////////////////////
 
   render() {
 
@@ -21,8 +17,8 @@ class BathTime extends React.Component {
     //use STATE to pull from LAST BATH ENTRY (using [index]) 
 
     return (
-
       <div>
+
         <header>
           <h1>Last Time Baby Had A Bath</h1>
           <p className='date'>
@@ -31,6 +27,7 @@ class BathTime extends React.Component {
         </header>
 
         <div className='flex-container'>
+          
           <form className='feed-me-form' onSubmit={this.handleSubmit}>
             <div className="flex-container">
               <button className="button">Bath Time</button>
@@ -41,7 +38,9 @@ class BathTime extends React.Component {
             <Link to='/bathtimelog' className='button-nav'>Logs</Link>
             <Link to='/' className='button-nav'>Back</Link>
           </div>
+
         </div>
+
       </div>
 
     );

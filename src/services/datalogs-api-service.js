@@ -30,7 +30,6 @@ const DatalogsApiService = {
     },
 
 
-
     //GET CHANGE DIAPER DATA LOGS - ENDPOINT 2-1
     getChangeDiaperDatalogs() {
         return fetch(`${config.API_ENDPOINT}/changediaperdata`, {
@@ -58,6 +57,7 @@ const DatalogsApiService = {
         )
     },
 
+
     //POST NEW DATA LOGS - ENDPOINT 4-1
     postNewDatalog(newEvent) {
         console.log(`postNewDatalog ${newEvent} works`);
@@ -76,15 +76,12 @@ export default DatalogsApiService;
 
 
 
-
-
-
-
+////////////////////////////////////////////////////////////////
+/////////////////////////   NOTES   ////////////////////////////
 /** "MY BABY LOG" CURRENT USABLE ENDPOINTS 
- * /                   <--- "Hello, Mommies & Daddies!" --->
- ** /allthedata         <--- ALL the datalogs ---> getAllDatalogs
- ** /feedbabydata       <--- "Feed Baby" datalogs ---> getDatalogsByEventCategory(Feed)
- ** /changediaperdata   <--- "Change Diaper" datalogs ---> getDatalogsByEventCategory(Diaper)
- ** /bathtimedata       <--- "Bath Time" datalogs ---> getDatalogsByEventCategory(Bath)
- *  
+ * /    <--- "Hello, Mommies & Daddies!" --->
+ ** /allthedata  <--- getAllDatalogs
+ ** /feedbabydata <--- getDatalogsByEventCategory(Feed)
+ ** /changediaperdata  <--- getDatalogsByEventCategory(Diaper)
+ ** /bathtimedata  <--- getDatalogsByEventCategory(Bath)
 **/ 

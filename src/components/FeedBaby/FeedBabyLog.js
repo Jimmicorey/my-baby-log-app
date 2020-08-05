@@ -17,7 +17,6 @@ class FeedBabyLog extends React.Component {
 
   componentDidMount() {
     console.log('FeedBabyLog componentDidMount works!');
-
   
     fetch(`${config.API_ENDPOINT}/feedbabydata`)
     .then(res => res.json())
@@ -28,14 +27,7 @@ class FeedBabyLog extends React.Component {
 
   }
 
-
-  
-
   render() {
-
-    
-
-
     return (
       <div>
           <h1>FEED BABY LOG</h1>
@@ -60,40 +52,3 @@ class FeedBabyLog extends React.Component {
 }
 
 export default FeedBabyLog;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function getFeedBabyData(userId) {
-//   console.log(`getFeedBabyData ${userId} runs`)
-
-//   return fetch(`${config.API_ENDPOINT}/${userId}/feedbabydata`, {
-//     headers: {
-//       'authorization': `basic ${TokenService.getAuthToken()}`,
-//     },
-//   })
-//     .then(res =>
-//       (!res.ok)
-//         ? res.json().then(e => Promise.reject(e))
-//         : res.json()
-//     )
-// }
-
-  // renderFeedBabyData() {
-  //   console.log('renderFeedBabyData runs');
-  //   return 'SOME MORE DATA';
-  // }

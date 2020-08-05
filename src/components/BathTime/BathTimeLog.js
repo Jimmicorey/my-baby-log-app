@@ -51,34 +51,3 @@ class BathTimeLog extends React.Component {
 }
 
 export default BathTimeLog;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function getBathTimeData(userId) {
-//   console.log(`getBathTimeData ${userId} runs`)
-// }
-
-// componentDidMount() {
-//   console.log('BathTimeLog componentDidMount works!');
-//   getBathTimeData('userId is 12345');
-// }
-
-// renderBathTimeData() {
-//   console.log('renderBathTimeData runs');
-//   return 'SOME MORE DATA';
-// }

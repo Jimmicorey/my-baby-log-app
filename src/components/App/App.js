@@ -7,9 +7,7 @@ import BathTime from '../BathTime/BathTime';
 import FeedBabyLog from '../FeedBaby/FeedBabyLog';
 import ChangeDiaperLog from '../ChangeDiaper/ChangeDiaperLog';
 import BathTimeLog from '../BathTime/BathTimeLog';
-
 import './App.css';
-
 
 class App extends React.Component {
 
