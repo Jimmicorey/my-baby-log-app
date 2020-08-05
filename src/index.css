@@ -12,9 +12,10 @@ font-family: 'Open Sans', sans-serif;
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  color: #6000AF;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #6000AF;
 }
 
 code {

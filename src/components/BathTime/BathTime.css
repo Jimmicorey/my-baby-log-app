@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
 }
 
@@ -40,15 +40,4 @@ header > p {
 
 a {
     text-decoration: none;
-}
-
-.button-nav {
-    width: 100%;
-    font-size: 30px;
-    font-weight: 800;
-    text-align: center;
-    border: 2px solid black;
-    background: lightgray;
-    margin: 20px;
-    padding: 20px 20px;
-}
+} */

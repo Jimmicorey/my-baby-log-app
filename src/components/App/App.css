@@ -5,6 +5,22 @@ font-family: 'Balsamiq Sans', cursive;
 font-family: 'Open Sans', sans-serif; 
 */
 
+
+/* header > p {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+} */
+
+
+/* .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0;
+} */
+
 body {
     margin: 20px 25px;
     font-size: 20px;
@@ -15,11 +31,11 @@ header {
     margin-bottom: -50px;
 }
 
-/* h1 {
+h1 {
     text-align: center;
     padding: 10px 70px;
     font-size: 30px;
-} */
+}
 
 .timer-text {
     margin: -20px 0 25px;
@@ -71,6 +87,15 @@ main, .flex-container {
     margin: 10px 0;
 }
 
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
 
 
 a {
@@ -80,13 +105,12 @@ a {
 a:visited {
     color: #500091;
 }
-a:hover {
+
+a:hover, .button:hover {
     background: #ED469A;
     border-color: #92295dd2;
     color: #FCC700;
 }
-
-
 
 .button {
     flex: 1;
@@ -98,6 +122,23 @@ a:hover {
     font-family: 'Balsamiq Sans', cursive;
     font-size: 35px; 
     font-weight: 700;
+    border: 5px solid #c983028a;
+    border-radius: 50px;
+    background: #FCC700;
+    box-shadow: 0 5px 5px #500091, 
+                0 5px 10px #500091;
+}
+
+.button-nav {
+    flex: 1;
+    width: 150px;
+    height: 100px;
+    margin: 150px 10px 10px;
+    padding: 25px 20px;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 30px;
+    font-weight: 800;
     border: 5px solid #c983028a;
     border-radius: 50px;
     background: #FCC700;
