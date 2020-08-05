@@ -12,7 +12,7 @@ function FeedBabyTimer() {
 
     return (
         <div className="flex-container">
-            <h1>Last Time Baby Was Fed</h1>
+            <h1 className='timer-text'>Last Time Baby Was Fed</h1>
             <p className='timer'>
                 {date.toLocaleTimeString()}
             </p>
@@ -28,4 +28,5 @@ export default FeedBabyTimer;
 
 //Possible equation to get the count...
 // timer = current browser timestamp - latest 'FEED baby' timestamp
+// OR set the "Feed Baby" button to trigger a 2nd EVENT that starts||resets the timer each time it is clicked
 

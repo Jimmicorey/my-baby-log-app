@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Open+Sans:wght@400;600;700;800&display=swap');
+
+/* 
+font-family: 'Balsamiq Sans', cursive;
+font-family: 'Open Sans', sans-serif; 
+*/
+
 body {
     margin: 20px 25px;
     font-size: 20px;
+    background: #00CDB0;
 }
 
 header {
@@ -11,6 +19,12 @@ h1 {
     text-align: center;
     padding: 10px 70px;
     font-size: 30px;
+}
+
+.timer-text {
+    margin-top: -10px;
+    padding: 0 20px;
+    font-size: 40px;
 }
 
 .timer {
@@ -38,17 +52,36 @@ main, .flex-container {
     margin: 10px 0;
 }
 
+
+
 a {
     text-decoration: none;
+    color: #500091;
+}
+a:visited {
+    color: #500091;
+}
+a:hover {
+    background: #ED469A;
+    border-color: #92295dd2;
+    color: #FCC700;
 }
 
+
+
 .button {
+    flex: 1;
     width: 100%;
-    font-size: 30px;
-    font-weight: 800;
+    height: 100px;
     text-align: center;
-    padding: 40px 35px;
-    margin: 0 0 50px 0;
-    border: 2px solid black;
-    background: lightgray;
+    padding: 35px;
+    margin: 0 0 35px 0;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 35px; 
+    font-weight: 700;
+    border: 5px solid #c983028a;
+    border-radius: 50px;
+    background: #FCC700;
+    box-shadow: 0 5px 5px #500091, 
+                0 5px 10px #500091;
 }

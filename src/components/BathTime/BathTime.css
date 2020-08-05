@@ -42,17 +42,6 @@ a {
     text-decoration: none;
 }
 
-.button {
-    width: 105%;
-    font-size: 30px;
-    font-weight: 800;
-    text-align: center;
-    padding: 40px 55px;
-    margin: 0 0 20px 0;
-    border: 2px solid black;
-    background: lightgray;
-}
-
 .button-nav {
     width: 100%;
     font-size: 30px;

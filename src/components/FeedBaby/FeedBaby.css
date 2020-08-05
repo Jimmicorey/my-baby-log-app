@@ -39,19 +39,6 @@ a {
     text-decoration: none;
 }
 
-.button {
-    flex: 1;
-    font-size: 30px;
-    font-weight: 800;
-    text-align: center;
-    height: 100px;
-    padding: 10px;
-    margin: 20px 10px 30px;
-    border: 2px solid black;
-    background: lightgray;
-
-}
-
 .button-nav {
     width: 100%;
     font-size: 30px;
