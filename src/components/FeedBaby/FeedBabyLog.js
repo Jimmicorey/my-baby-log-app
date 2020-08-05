@@ -18,7 +18,7 @@ class FeedBabyLog extends React.Component {
     console.log('FeedBabyLog componentDidMount works!');
 
   
-    fetch('http://localhost:8000/api/datalogs/feedbabydata')
+    fetch(`${config.API_ENDPOINT}/feedbabydata`)
     .then(res => res.json())
     .then( datalogs => {
       this.setState({datalogs});
@@ -59,6 +59,9 @@ class FeedBabyLog extends React.Component {
 }
 
 export default FeedBabyLog;
+
+
+
 
 
 
