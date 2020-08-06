@@ -58,7 +58,7 @@ class FeedBabyTimer extends React.Component {
                 </p>
 
                 <p className='timer'>
-                    {lastFeedBabyTime.toLocaleTimeString()}
+                    {timeSinceLastFeed}
                 </p>
             </div>
         ); 
