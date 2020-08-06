@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-/* 
-ffont-family: 'Balsamiq Sans', Arial, Helvetica, sans-serif;
-font-family: 'Open Sans', sans-serif; 
-*/
-
-/* .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 100px 0;
-} */
-
 
 header > p {
     text-align: center;
@@ -20,21 +7,47 @@ header > p {
     font-size: 30px;
 }
 
-
 body {
     margin: 20px 25px;
     font-size: 20px;
     background: #00CDB0;
 }
 
-header {
-    margin-bottom: -50px;
+main, .flex-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+    margin: 0;
+    width: 100%;
 }
+
 
 h1 {
     text-align: center;
-    padding: 10px 70px;
-    font-size: 30px;
+    font-size: 38px;
+    font-style: oblique;
+    text-transform: lowercase;
+    color: #6f00cae8;
+
+}
+
+.feed-me-form {
+    justify-content: space-evenly;    
+    margin-top: 150px;
+}
+
+.change-diaper-form {
+    justify-content: space-evenly;
+    margin-top: 159px;
+}
+
+.bath-time-form {
+    justify-content: space-evenly;
+    margin-top: 67px;
 }
 
 /********************************************/
@@ -74,45 +87,7 @@ h1 {
 /********************************************/
 
 
-h2 {
-    background-color: lightgray;
-    padding: 10px;
-}
 
-
-main, .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.flex-container {
-    margin: 10px 0;
-}
-
-.flex-container-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 50px;
-}
-
-/********************************************/
-/********************************************/
-.feed-me-form {
-    margin-top: 200px;
-}
-
-.change-diaper-form {
-    margin-top: 159px;
-}
-
-.bath-time-form {
-    margin-top: 67px;
-}
 /********************************************/
 /********************************************/
 
@@ -157,15 +132,26 @@ a:hover, .button:hover {
 }
 
 
-/********************************************/
-/********************************************/
+/********************************************************/
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
 .navigation {
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
 }
+
 .button-nav {
     flex: 1;
-    width: 100px;
+    justify-content: space-evenly;
+    width: 200px;
     height: 100px;
     margin: 20px;
     padding: 25px 20px;
@@ -179,9 +165,6 @@ a:hover, .button:hover {
     box-shadow: 0 5px 5px #500091, 
                 0 5px 10px #500091;
 }
-/********************************************/
-/********************************************/
-
 
 
 

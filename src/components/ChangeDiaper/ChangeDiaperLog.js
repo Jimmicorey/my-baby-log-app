@@ -28,8 +28,8 @@ class ChangeDiaperLog extends React.Component {
 
   render() {
     return (
-      <div>
-          <h1>CHANGE DIAPER LOG</h1>
+      <div className='flex-container'>
+          <h1 className='change-diaper-log'>CHANGE DIAPER LOG</h1>
         <div className='flex-container'>
 
           <ul>

@@ -29,8 +29,8 @@ class FeedBabyLog extends React.Component {
 
   render() {
     return (
-      <div>
-          <h1>FEED BABY LOG</h1>
+      <div className='flex-container'>
+          <h1 className='feed-baby-log'>FEED BABY LOG</h1>
         <div className='flex-container'>
          
           <ul>

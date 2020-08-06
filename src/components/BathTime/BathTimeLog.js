@@ -28,8 +28,8 @@ class BathTimeLog extends React.Component {
   
   render() {
     return (
-      <div>
-          <h1>BATH TIME LOG</h1>
+      <div className='flex-container'>
+          <h1 className='bath-time-log'>BATH TIME LOG</h1>
         <div className='flex-container'>
 
         <ul>
