@@ -19,7 +19,9 @@ class BathTime extends React.Component {
     fetch(`${config.API_ENDPOINT}/bathtimedata`)
     .then(res => res.json())
     .then( datalogs => {
-      this.setState({date_created: datalogs[datalogs.length-1].date_created});
+      this.setState({
+        date_created: datalogs[datalogs.length-1].date_created
+      });
       console.log(datalogs);
     }); 
   }
@@ -40,7 +42,7 @@ class BathTime extends React.Component {
         <header>
           <h1>Last Time Baby Had A Bath</h1>
           <p className='date'>
-              {new Date(bathDate).toLocaleString()}
+              {new Date(bathDate).toLocaleDateString()}
           </p>
         </header>
 
