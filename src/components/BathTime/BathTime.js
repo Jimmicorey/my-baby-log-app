@@ -29,7 +29,7 @@ class BathTime extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log('Bath Time submit button works!!!');
-    DatalogsApiService.postNewDatalog('BATH');
+    DatalogsApiService.postNewDatalog('Bath');
   }
 
   render() {
@@ -54,7 +54,7 @@ class BathTime extends React.Component {
             </div>
           </form>
 
-          <div className='flex-container-row'>
+          <div className='navigation flex-container-row'>
             <Link to='/bathtimelog' className='button-nav'>Logs</Link>
             <Link to='/' className='button-nav'>Back</Link>
           </div>

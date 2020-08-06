@@ -9,7 +9,7 @@ class ChangeDiaper extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log('Change Diaper submit button works!!!');
-    DatalogsApiService.postNewDatalog('DIAPER CHANGE');
+    DatalogsApiService.postNewDatalog('Diaper Change');
   }
 
   render() {
@@ -26,7 +26,7 @@ class ChangeDiaper extends React.Component {
             </div>
           </form>
 
-          <div className='flex-container-row'>
+          <div className='navigation flex-container-row'>
             <Link to='/changediaperlog' className='button-nav'>Logs</Link>
             <Link to='/' className='button-nav'>Back</Link>
           </div>

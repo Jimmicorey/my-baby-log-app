@@ -8,7 +8,7 @@ class FeedBaby extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log('Feed Me! submit button works!!!');
-    DatalogsApiService.postNewDatalog('FEED');
+    DatalogsApiService.postNewDatalog('Feed');
   }
   
   render() {
@@ -24,7 +24,7 @@ class FeedBaby extends React.Component {
             </div>
           </form>
 
-          <div className='flex-container-row'>
+          <div className='navigation flex-container-row'>
             <Link to='/feedbabylog' className='button-nav'>Logs</Link>
             <Link to='/' className='button-nav'>Back</Link>
           </div>

@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 /* 
-font-family: 'Balsamiq Sans', arial;
+ffont-family: 'Balsamiq Sans', Arial, Helvetica, sans-serif;
 font-family: 'Open Sans', sans-serif; 
 */
-
-
-header > p {
-    text-align: center;
-    padding: 10px;
-    font-size: 30px;
-}
-
 
 /* .flex-container {
     display: flex;
@@ -20,6 +12,14 @@ header > p {
     align-items: center;
     margin: 100px 0;
 } */
+
+
+header > p {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
 
 body {
     margin: 20px 25px;
@@ -37,6 +37,8 @@ h1 {
     font-size: 30px;
 }
 
+/********************************************/
+/********************************************/
 .timer-text {
     margin: -20px 0 25px;
     padding: 10px;
@@ -68,6 +70,8 @@ h1 {
     background-color: #6f00cae8;
     border: 15px solid #fc62efc4;
 }
+/********************************************/
+/********************************************/
 
 
 h2 {
@@ -112,6 +116,13 @@ main, .flex-container {
 /********************************************/
 /********************************************/
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/********************************************/
+/********************************************/
 
 
 a {
@@ -135,7 +146,7 @@ a:hover, .button:hover {
     text-align: center;
     padding: 35px;
     margin: 0 0 45px 0;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Balsamiq Sans', Arial, Helvetica, sans-serif;
     font-size: 35px; 
     font-weight: 700;
     border: 5px solid #c983028a;
@@ -145,14 +156,21 @@ a:hover, .button:hover {
                 0 5px 10px #500091;
 }
 
+
+/********************************************/
+/********************************************/
+.navigation {
+    position: fixed;
+    bottom: 0;
+}
 .button-nav {
     flex: 1;
-    width: 150px;
+    width: 100px;
     height: 100px;
-    margin: 150px 10px 10px;
+    margin: 20px;
     padding: 25px 20px;
     text-align: center;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Balsamiq Sans', Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: 800;
     border: 5px solid #c983028a;
@@ -161,6 +179,9 @@ a:hover, .button:hover {
     box-shadow: 0 5px 5px #500091, 
                 0 5px 10px #500091;
 }
+/********************************************/
+/********************************************/
+
 
 
 

@@ -40,7 +40,7 @@ class ChangeDiaperLog extends React.Component {
               )}
             </ul>
 
-          <div className='flex-container-row'>
+          <div className='navigation flex-container-row'>
             <Link to='/changediaper' className='button-nav'>Back</Link>
             <Link to='/' className='button-nav'>Home</Link>
           </div>
