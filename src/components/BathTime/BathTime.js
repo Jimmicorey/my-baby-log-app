@@ -14,7 +14,7 @@ class BathTime extends React.Component {
   }
 
   componentDidMount() {
-    console.log('BathTimeLog componentDidMount works!');
+    console.log('componentDidMount works!');
       
     fetch(`${config.API_ENDPOINT}/bathtimedata`)
     .then(res => res.json())

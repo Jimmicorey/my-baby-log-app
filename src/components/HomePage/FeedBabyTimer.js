@@ -1,32 +1,70 @@
 import React from 'react';
+import config from '../../config';
 
-/**
- * FeedBabyTimer will COUNT-UP 
- * from the last FeedBabyLog entry 
- * to current USER LOGIN
-**/
 
-function FeedBabyTimer() {
+class FeedBabyTimer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            date_created: ""
+        };
+    }
 
-    const date = new Date(); //<--- this is not returning the correct values yet!!!
+    componentDidMount() {  
+        console.log('FeedBabyTimer componentDidMount works!');
+        
+        fetch(`${config.API_ENDPOINT}/feedbabydata`)
+        .then(res => res.json())
+        .then( datalogs => {
+            this.setState({
+              date_created: datalogs[datalogs.length-1].date_created
+            });
+            console.log(this.state.date_created);
+        });   
+    }
 
-    return (
-        <div className="flex-container">
-            <p className='timer-text'>Last Time Baby Was Fed</p>
-            <p className='timer'>
-                {date.toLocaleTimeString()}
-            </p>
-        </div>
-    )  
+
+    render() {
+        //shows the time of last baby feeding log
+        let lastFeedBabyTime = 
+        new Date(this.state.date_created); 
+
+        //this returns the correct timing
+        let curr = new Date();
+        let prev = new Date(this.state.date_created); 
+        let timer = curr - prev;
+        // let h,m,s;
+        let h = Math.floor(timer/1000/60/60);
+        let m = Math.floor((timer/1000/60/60 - h)*60);
+        let s = Math.floor(((timer/1000/60/60 - h)*60 - m)*60);
+
+        s < 10 ? s = `0${s}`: s = `${s}`
+        m < 10 ? m = `0${m}`: m = `${m}`
+        h < 10 ? h = `0${h}`: h = `${h}`
+
+        let timeSinceLastFeed = `${h}:${m}:${s}`;
+
+        console.log(timeSinceLastFeed);
+
+     
+        
+
+
+
+        return (
+            <div className="flex-container">
+                <p className='timer-text'>
+                    Last Time Baby Was Fed
+                </p>
+
+                <p className='timer'>
+                    {lastFeedBabyTime.toLocaleTimeString()}
+                </p>
+            </div>
+        ); 
+    } 
 
 }
 
 export default FeedBabyTimer;
-
-
-//////////////////////////////////////////////////////////
-
-//Possible equation to get the count...
-// timer = current browser timestamp - latest 'FEED baby' timestamp
-// OR set the "Feed Baby" button to trigger a 2nd EVENT that starts||resets the timer each time it is clicked
 
