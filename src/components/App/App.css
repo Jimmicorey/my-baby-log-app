@@ -96,6 +96,22 @@ main, .flex-container {
     margin-bottom: 50px;
 }
 
+/********************************************/
+/********************************************/
+.feed-me-form {
+    margin-top: 200px;
+}
+
+.change-diaper-form {
+    margin-top: 159px;
+}
+
+.bath-time-form {
+    margin-top: 67px;
+}
+/********************************************/
+/********************************************/
+
 
 
 a {
@@ -145,3 +161,6 @@ a:hover, .button:hover {
     box-shadow: 0 5px 5px #500091, 
                 0 5px 10px #500091;
 }
+
+
+

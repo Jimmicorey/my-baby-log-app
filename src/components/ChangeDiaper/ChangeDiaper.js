@@ -20,7 +20,7 @@ class ChangeDiaper extends React.Component {
         <h1>How was my diaper?</h1>
 
         <div className='flex-container'>
-          <form className='feed-me-form' onSubmit={this.handleSubmit}>
+          <form className='change-diaper-form' onSubmit={this.handleSubmit}>
             <div className="flex-container">
               <button className="button">Change Diaper</button>
             </div>

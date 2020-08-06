@@ -48,7 +48,7 @@ class BathTime extends React.Component {
 
         <div className='flex-container'>
           
-          <form className='feed-me-form' onSubmit={this.handleSubmit}>
+          <form className='bath-time-form' onSubmit={this.handleSubmit}>
             <div className="flex-container">
               <button className="button">Bath Time</button>
             </div>
