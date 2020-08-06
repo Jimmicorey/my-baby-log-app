@@ -1,9 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './BathTime.css';
+import config from '../../config';
 import DatalogsApiService from '../../services/datalogs-api-service';
 
 class BathTime extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { 
+      date_created: ""
+    };
+  }
+
+  componentDidMount() {
+    console.log('BathTimeLog componentDidMount works!');
+      
+    fetch(`${config.API_ENDPOINT}/bathtimedata`)
+    .then(res => res.json())
+    .then( datalogs => {
+      this.setState({date_created: datalogs[datalogs.length-1].date_created});
+      console.log(datalogs);
+    }); 
+  }
 
   handleSubmit(e) {
     e.preventDefault();
@@ -13,8 +32,7 @@ class BathTime extends React.Component {
 
   render() {
 
-    const date = new Date(); //<--- this is not returning the correct values yet!!!
-    //use STATE to pull from LAST BATH ENTRY (using [index]) 
+    let bathDate = this.state.date_created;
 
     return (
       <div>
@@ -22,7 +40,7 @@ class BathTime extends React.Component {
         <header>
           <h1>Last Time Baby Had A Bath</h1>
           <p className='date'>
-              {date.toLocaleDateString()}
+              {new Date(bathDate).toLocaleString()}
           </p>
         </header>
 
