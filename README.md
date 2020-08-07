@@ -21,34 +21,43 @@ https://my-baby-log-app.vercel.app/
 ## Screenshots 
 
 ### Homepage... 
-From here you have the option of navigating to 1 of 3 pages: 'Feed Baby', 'Change Diaper', 'Bath Time'
+From here you have the option of navigating to 1 of 3 pages: 'Feed Baby', 'Change Diaper', 'Bath Time'.
+
 A nice feature to note is that you can see at a glance on this page how much time has passed since you last logged a feeding of baby.
+
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_homepage.png)
 
 
 ### 'Feed Baby Page'... 
 just click the 'Feed Me!' button and the current date & time will be logged. 
+
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-page.png)
 
 Click 'Logs' to see the list of dates & times when you Feed Baby.
+
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-logs-page.png)
 
 
 ### 'Change Diaper Page'... 
-just click the 'Change Diaper' button and the current date & time will be logged. 
+just click the 'Change Diaper' button and the current date & time will be logged.
+
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_change-diaper-page.png)
 
 Click 'Logs' to see the list of dates & times when you changed that wet/messy diaper.
+
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_change-diaper-logs-page.png)
 
 
 
 ### 'Bath Time Page'... 
 just click the 'Bath Time' button and the current date & time will be logged. 
+
 Also note that you can see at a glance on this page the most recent date that you logged giving 'wee babe' a bath.
+
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-page.png)
 
 Click 'Logs' to see the list of bath dates & times. 
+
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-logs-page.png)
 
 
