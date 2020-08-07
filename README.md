@@ -1,7 +1,8 @@
 
 # 'My Baby Log' by James "jimmicorey" Coffelt
 
-'My Baby Log' is for us mommies & daddies who may be needing a little help keeping track of the VERY FREQUENT tasks of 
+## 'My Baby Log' 
+is for us mommies & daddies who may be needing a little help keeping track of the VERY FREQUENT tasks of 
 feeding, diaper changing, and bathing their newborn babies. With the complete lack of sleep that comes with a newborn, 
 as I am learning from current experience, it can be really easy to lose track of when you last did those and how often 
 you’ve done them. This app will help with that.
