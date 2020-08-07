@@ -10,14 +10,30 @@ you’ve done them. This app will help with that.
 
 * Solution: " 'My Baby Log' ... it's REALLY just as simple as 2-clicks and your done!!!"
 
-# Live Link to 'My Baby Log'
+## Live Link to 'My Baby Log'
 https://my-baby-log-app.vercel.app/
 
 
-# Screenshots 
+## Screenshots 
+
+The homepage which you will see when opening the app. 
+From here you have the option of navigating to 1 of 3 pages: 'Feed Baby', 'Change Diaper', 'Bath Time'
+A nice feature to note is that you can see at a glance on this page how much time has passed since you last logged a feeding of baby.
+
+'Feed Baby Page'... just click the 'Feed Me!' button and the current date & time will be logged. 
+Click 'Logs' to see the list of dates & times when you Feed Baby.
+
+'Change Diaper Page'... just click the 'Change Diaper' button and the current date & time will be logged. 
+Click 'Logs' to see the list of dates & times when you changed that wet/messy diaper.
+
+'Bath Time Page'... just click the 'Bath Time' button and the current date & time will be logged. 
+Click 'Logs' to see the list of bath dates & times. 
+Also note that you can see at a glance on this page the most recent date that you logged giving 'wee babe' a bath.
 
 
-# Technology Stack
+
+
+## Technology Stack
 Front-End: 
 * React 
 * CSS 
