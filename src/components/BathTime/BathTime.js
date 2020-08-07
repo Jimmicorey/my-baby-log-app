@@ -13,22 +13,18 @@ class BathTime extends React.Component {
     };
   }
 
-  componentDidMount() {
-    console.log('componentDidMount works!');
-      
+  componentDidMount() {  
     fetch(`${config.API_ENDPOINT}/bathtimedata`)
     .then(res => res.json())
     .then( datalogs => {
       this.setState({
         date_created: datalogs[datalogs.length-1].date_created
       });
-      console.log(datalogs);
     }); 
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log('Bath Time submit button works!!!');
     DatalogsApiService.postNewDatalog('Bath');
   }
 

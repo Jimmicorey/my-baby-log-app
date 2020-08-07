@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 import './FeedBabyLog.css';
 import config from '../../config';
 
-/**
- * FeedBabyLog should render 10 MOST RECENT logs
-**/
-
 class FeedBabyLog extends React.Component {
   constructor(props) {
     super(props);
@@ -15,16 +11,12 @@ class FeedBabyLog extends React.Component {
     };
   }
 
-  componentDidMount() {
-    console.log('FeedBabyLog componentDidMount works!');
-  
+  componentDidMount() {  
     fetch(`${config.API_ENDPOINT}/feedbabydata`)
     .then(res => res.json())
     .then( datalogs => {
       this.setState({datalogs});
-      console.log(datalogs);
     }); 
-
   }
 
   render() {

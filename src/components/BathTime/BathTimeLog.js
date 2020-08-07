@@ -15,15 +15,10 @@ class BathTimeLog extends React.Component {
     };
   }
 
-  componentDidMount() {
-    console.log('BathTimeLog componentDidMount works!');
-      
+  componentDidMount() {   
     fetch(`${config.API_ENDPOINT}/bathtimedata`)
     .then(res => res.json())
-    .then( datalogs => {
-      this.setState({datalogs});
-      console.log(datalogs);
-    }); 
+    .then( datalogs => { this.setState({datalogs}); }); 
   }
   
   render() {

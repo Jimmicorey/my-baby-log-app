@@ -13,6 +13,8 @@
 /HTML_TRANSFERS
 
 # misc
+notes.txt
+
 .DS_Store
 .env.local
 .env.development.local
@@ -24,3 +26,4 @@ yarn-debug.log*
 yarn-error.log*
 
 .vercel
+

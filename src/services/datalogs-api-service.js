@@ -2,21 +2,21 @@ import config from '../config';
 
 const DatalogsApiService = {
 
-    //GET ALL THE DATA LOGS - ENDPOINT TEST
+    //GET ALL THE DATA LOGS
     getAllDatalogs() {
         return fetch(`${config.API_ENDPOINT}/allthedata`, {
             headers: {
             },
         })
-            .then(res =>
-                (!res.ok)
-                    ? res.json().then(e => Promise.reject(e))
-                    : res.json()
-            )
+        .then(res =>
+            (!res.ok)
+                ? res.json().then(e => Promise.reject(e))
+                : res.json()
+        )
     },
 
 
-    //GET FEED BABY DATA LOGS - ENDPOINT 1-1
+    //GET FEED BABY DATA LOGS
     getFeedBabyDatalogs() {
         return fetch(`${config.API_ENDPOINT}/feedbabydata`, {
             headers: {
@@ -30,7 +30,7 @@ const DatalogsApiService = {
     },
 
 
-    //GET CHANGE DIAPER DATA LOGS - ENDPOINT 2-1
+    //GET CHANGE DIAPER DATA LOGS
     getChangeDiaperDatalogs() {
         return fetch(`${config.API_ENDPOINT}/changediaperdata`, {
             headers: {
@@ -44,7 +44,7 @@ const DatalogsApiService = {
     },
 
 
-    //GET BATH TIME DATA LOGS  - ENDPOINT 3-1
+    //GET BATH TIME DATA LOGS
     getBathTimeDatalogs() {
         return fetch(`${config.API_ENDPOINT}/bathtimedata`, {
             headers: {
@@ -58,30 +58,15 @@ const DatalogsApiService = {
     },
 
 
-    //POST NEW DATA LOGS - ENDPOINT 4-1
+    //POST NEW DATA LOGS
     postNewDatalog(newEvent) {
-        console.log(`postNewDatalog ${newEvent} works`);
         return fetch(`${config.API_ENDPOINT}/feedbabydata`, {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({event_category: newEvent})
         })
-          .then(res => res.json())
+        .then(res => res.json())
     }
 }
 
 export default DatalogsApiService;
-
-
-
-
-
-////////////////////////////////////////////////////////////////
-/////////////////////////   NOTES   ////////////////////////////
-/** "MY BABY LOG" CURRENT USABLE ENDPOINTS 
- * /    <--- "Hello, Mommies & Daddies!" --->
- ** /allthedata  <--- getAllDatalogs
- ** /feedbabydata <--- getDatalogsByEventCategory(Feed)
- ** /changediaperdata  <--- getDatalogsByEventCategory(Diaper)
- ** /bathtimedata  <--- getDatalogsByEventCategory(Bath)
-**/ 

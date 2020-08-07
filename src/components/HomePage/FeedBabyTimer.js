@@ -12,57 +12,48 @@ class FeedBabyTimer extends React.Component {
     
         this.countUp = this.countUp.bind(this);
         this.startCounting = this.startCounting.bind(this);
-      }
+    }
     
-      startCounting() {
+    startCounting() {
         setInterval(this.countUp, 1000);
-      }
-    
-      countUp() {
-        // get total seconds between the times
-        let delta = Math.abs(Date.now() - new Date(this.state.date)) / 1000;
+    }
+
+    countUp() {
+        // get total milliseconds between the times
+        let time = Math.abs(Date.now() - new Date(this.state.date)) / 1000;
 
         // calculate (and subtract) whole days
-        let days = Math.floor(delta / 86400);
-        delta -= days * 86400;
+        // let days = Math.floor(time / 86400);
+        // time -= days * 86400;
 
         // calculate (and subtract) whole hours
-        let hours = Math.floor(delta / 3600) % 24;
-        delta -= hours * 3600;
+        let hours = Math.floor(time / 3600) % 24;
+        time -= hours * 3600;
 
         // calculate (and subtract) whole minutes
-        let minutes = Math.floor(delta / 60) % 60;
-        delta -= minutes * 60;
+        let minutes = Math.floor(time / 60) % 60;
+        time -= minutes * 60;
 
-        // what's left is seconds
-        let seconds = Math.floor(delta % 60); 
+        // calculate whole seconds
+        let seconds = Math.floor(time % 60); 
 
         //current timestamp
-        let now = `${days} dy: ${hours} hr: ${minutes} min`
-        //let now = new Date((Date.now()-new Date(this.state.date))).toString('H:mm:ss');
+        let now = `${hours} hr: ${minutes} min: ${seconds} sec`
+        
         this.setState(({ elapsedTime: now }));
-
-
-
-      }
+    }
    
 
-    componentDidMount() {  
-        console.log('FeedBabyTimer componentDidMount works!');
-        
+    componentDidMount() {          
         fetch(`${config.API_ENDPOINT}/feedbabydata`)
         .then(res => res.json())
         .then( datalogs => {
             this.setState({
               date: datalogs[datalogs.length-1].date_created
             });
-            console.log(this.state.date);
         })
         .then(this.startCounting());
     }
-
-  
-
 
     render() {
         return (

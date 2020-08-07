@@ -8,7 +8,6 @@ class ChangeDiaper extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log('Change Diaper submit button works!!!');
     DatalogsApiService.postNewDatalog('Diaper Change');
   }
 

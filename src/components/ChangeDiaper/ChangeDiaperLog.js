@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 import './ChangeDiaperLog.css';
 import config from '../../config';
 
-/** 
- * ChangeDiaperLog should render 10 MOST RECENT logs 
-**/
-
 class ChangeDiaperLog extends React.Component {
   constructor(props) {
     super(props);
@@ -15,15 +11,10 @@ class ChangeDiaperLog extends React.Component {
     };
   }
 
-  componentDidMount() {
-    console.log('ChangeDiaperLog componentDidMount works!');
-    
+  componentDidMount() {    
     fetch(`${config.API_ENDPOINT}/changediaperdata`)
     .then(res => res.json())
-    .then( datalogs => {
-      this.setState({datalogs});
-      console.log(datalogs);
-    }); 
+    .then( datalogs => { this.setState({datalogs}); }); 
   }
 
   render() {
