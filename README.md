@@ -10,6 +10,9 @@ you’ve done them. This app will help with that.
 
 * Solution: " 'My Baby Log' ... it's REALLY just as simple as 2-clicks and your done!!!"
 
+# Live Link to 'My Baby Log'
+https://my-baby-log-app.vercel.app/
+
 
 # Screenshots 
 

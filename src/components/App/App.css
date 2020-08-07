@@ -242,7 +242,7 @@ a:hover, .button:hover {
 /********************************************/
 
 /********** DESKTOP / LAPTOP DESIGN *********/
-@media all and (min-width: 376px) {
+@media all and (min-width: 415px) {
 
     .timer-text, .bath {
         border-top-left-radius: 10px;
