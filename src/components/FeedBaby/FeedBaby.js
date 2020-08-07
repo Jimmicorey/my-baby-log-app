@@ -14,7 +14,7 @@ class FeedBaby extends React.Component {
     return (
 
       <div>
-        <h1>I'm Hungry!!</h1>
+        <h1 className='hungry'>I'm Hungry!!</h1>
         
         <div className='flex-container'>
           <form className='feed-me-form' onSubmit={this.handleSubmit}>

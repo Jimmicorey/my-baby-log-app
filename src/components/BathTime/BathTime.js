@@ -36,8 +36,8 @@ class BathTime extends React.Component {
       <div>
 
         <header>
-          <h1>Last Time Baby Had A Bath</h1>
-          <p className='date'>
+          <h1 className='bath'>Last Time Baby Had A Bath</h1>
+          <p className='bath-date'>
               {new Date(bathDate).toLocaleDateString()}
           </p>
         </header>

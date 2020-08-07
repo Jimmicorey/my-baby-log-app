@@ -23,10 +23,10 @@ class ChangeDiaperLog extends React.Component {
           <h1 className='change-diaper-log'>CHANGE DIAPER LOG</h1>
         <div className='flex-container'>
 
-          <ul>
+          <ul className='diaper-list'>
               {this.state.datalogs.map(d => 
                 <li key={d.id}> 
-                  {d.event_category} - {new Date(d.date_created).toLocaleString()}
+                  {d.event_category}: {new Date(d.date_created).toLocaleString()}
                 </li>
               )}
             </ul>
