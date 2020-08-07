@@ -30,6 +30,7 @@ A nice feature to note is that you can see at a glance on this page how much tim
 
 
 
+
 ### 'Feed Baby Page'... 
 just click the 'Feed Me!' button and the current date & time will be logged. 
 
@@ -38,6 +39,7 @@ just click the 'Feed Me!' button and the current date & time will be logged.
 Click 'Logs' to see the list of dates & times when you Feed Baby.
 
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-logs-page.png)
+
 
 
 
@@ -52,6 +54,7 @@ Click 'Logs' to see the list of dates & times when you changed that wet/messy di
 
 
 
+
 ### 'Bath Time Page'... 
 just click the 'Bath Time' button and the current date & time will be logged. 
 
@@ -62,6 +65,7 @@ Also note that you can see at a glance on this page the most recent date that yo
 Click 'Logs' to see the list of bath dates & times. 
 
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-logs-page.png)
+
 
 
 
