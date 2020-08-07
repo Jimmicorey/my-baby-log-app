@@ -10,7 +10,7 @@ header > p {
 body {
     margin: 20px 25px;
     font-size: 20px;
-    background: #00CDB0;
+    background-color: #78d9f1;
 }
 
 main, .flex-container {
@@ -241,4 +241,40 @@ a:hover, .button:hover {
 }
 /********************************************/
 
+/********** DESKTOP / LAPTOP DESIGN *********/
+@media all and (min-width: 376px) {
+
+    .timer-text, .bath {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 30px;
+        width: 450px;
+
+    }
+    .timer, .bath-date {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: 30px;
+        font-size: 30px;
+        width: 450px;
+    }
+
+    h1 {
+        border-radius: 10px;
+    }
+
+    .bath-date {
+        margin-bottom: 80px;
+    }
+
+    .button {
+        width: 325px;
+        margin-top: 75px;
+    }
+
+    .button-nav {
+        flex: none;
+        width: 200px;
+    }
+  }
 
