@@ -81,3 +81,10 @@ Back-End:
 * Node 
 * Express 
 * PostgreSQL
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+## Lighthouse Scores
+
+![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/my-baby-log-app_Lighthouse_Score.png)
+
