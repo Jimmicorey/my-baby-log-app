@@ -13,12 +13,14 @@ you’ve done them. This app will help with that.
 ### * Solution: 
 " 'My Baby Log' ... it's REALLY just as simple as 2-clicks and your done!!!"
 
-
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 ## Live Link to 'My Baby Log'
 https://my-baby-log-app.vercel.app/
 
 
-
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 ## Screenshots 
 
 ### Homepage... 
@@ -34,15 +36,13 @@ A nice feature to note is that you can see at a glance on this page how much tim
 ### 'Feed Baby Page'... 
 just click the 'Feed Me!' button and the current date & time will be logged. 
 
+![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-page.png)  
+
 Click 'Logs' to see the list of dates & times when you Feed Baby.
 
-![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-page.png)   ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-logs-page.png)
+![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-logs-page.png)
 
-
-
-
-
-
+ 
 
 
 ### 'Change Diaper Page'... 
@@ -69,8 +69,8 @@ Click 'Logs' to see the list of bath dates & times.
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-logs-page.png)
 
 
-
-
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 ## Technology Stack
 Front-End: 
 * React 
