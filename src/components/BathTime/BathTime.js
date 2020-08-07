@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './BathTime.css';
 import config from '../../config';
 import DatalogsApiService from '../../services/datalogs-api-service';
 

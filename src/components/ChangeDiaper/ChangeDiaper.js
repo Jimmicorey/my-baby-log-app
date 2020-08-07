@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ChangeDiaper.css';
 import DatalogsApiService from '../../services/datalogs-api-service';
 
 

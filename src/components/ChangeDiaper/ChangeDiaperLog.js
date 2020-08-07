@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ChangeDiaperLog.css';
 import config from '../../config';
 
 class ChangeDiaperLog extends React.Component {

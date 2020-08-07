@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './FeedBaby.css';
 import DatalogsApiService from '../../services/datalogs-api-service';
 
 class FeedBaby extends React.Component {
