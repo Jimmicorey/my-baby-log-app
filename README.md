@@ -24,9 +24,9 @@ https://my-baby-log-app.vercel.app/
 ## Screenshots 
 
 ### Homepage... 
-From here you have the option of navigating to 1 of 3 pages: 'Feed Baby', 'Change Diaper', 'Bath Time'.
+From here you have the option of navigating to 1 of 3 pages: **'Feed Baby', 'Change Diaper', 'Bath Time'**.
 
-A nice feature to note is that you can see at a glance on this page how much time has passed since you last logged a feeding of baby.
+A nice feature to note is that you can see **at a glance** on this page **how much time has passed** since you last logged a feeding of baby.
 
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_homepage.png)
 
@@ -34,11 +34,11 @@ A nice feature to note is that you can see at a glance on this page how much tim
 
 
 ### 'Feed Baby Page'... 
-just click the 'Feed Me!' button and the current date & time will be logged. 
+just click the **'Feed Me!'** button and the current date & time will be logged. 
 
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-page.png)  
 
-Click 'Logs' to see the list of dates & times when you Feed Baby.
+Click **'Logs'** to see the list of **dates & times** when you **Feed Baby**.
 
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-logs-page.png)
 
@@ -46,11 +46,11 @@ Click 'Logs' to see the list of dates & times when you Feed Baby.
 
 
 ### 'Change Diaper Page'... 
-just click the 'Change Diaper' button and the current date & time will be logged.
+just click the **'Change Diaper'** button and the current date & time will be logged.
 
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_change-diaper-page.png)
 
-Click 'Logs' to see the list of dates & times when you changed that wet/messy diaper.
+Click **'Logs'** to see the list of **dates & times** when you **changed that wet/messy diaper**.
 
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_change-diaper-logs-page.png)
 
@@ -58,13 +58,13 @@ Click 'Logs' to see the list of dates & times when you changed that wet/messy di
 
 
 ### 'Bath Time Page'... 
-just click the 'Bath Time' button and the current date & time will be logged. 
+just click the **'Bath Time'** button and the current date & time will be logged. 
 
-Also note that you can see at a glance on this page the most recent date that you logged giving 'wee babe' a bath.
+Also note that you can see **at a glance** on this page the **most recent date** that you logged giving 'wee babe' a bath.
 
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-page.png)
 
-Click 'Logs' to see the list of bath dates & times. 
+Click **'Logs'** to see the list of **bath dates & times**. 
 
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-logs-page.png)
 
@@ -72,12 +72,12 @@ Click 'Logs' to see the list of bath dates & times.
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ## Technology Stack
-Front-End: 
+**Front-End:** 
 * React 
 * CSS 
 * HTML
 
-Back-End: 
+**Back-End:** 
 * Node 
 * Express 
 * PostgreSQL
@@ -85,6 +85,9 @@ Back-End:
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ## Lighthouse Scores
-
+**Mobile Scores**
 ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/my-baby-log-app_Lighthouse_Score.png)
+
+**Desktop Scores**
+![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/my-baby-log-app_DESKTOP_Lighthouse_Score.png)
 
