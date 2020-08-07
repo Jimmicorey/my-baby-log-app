@@ -1,73 +1,78 @@
 import React from 'react';
-//import config from '../../config';
+import config from '../../config';
 
 
 class FeedBabyTimer extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { 
-            // date_created: "",
-            date: new Date()
+        this.state = {
+          elapsedTime: null,
+          date: this.date
         };
-    }
+    
+        this.countUp = this.countUp.bind(this);
+        this.startCounting = this.startCounting.bind(this);
+      }
+    
+      startCounting() {
+        setInterval(this.countUp, 1000);
+      }
+    
+      countUp() {
+        // get total seconds between the times
+        let delta = Math.abs(Date.now() - new Date(this.state.date)) / 1000;
 
-    componentDidMount() {
-        this.timerID = setInterval(
-            () => this.tick(),
-            1000
-        );
-    }
+        // calculate (and subtract) whole days
+        let days = Math.floor(delta / 86400);
+        delta -= days * 86400;
 
-    componentWillUnmount() {
-        clearInterval(this.timerID);
-    }
+        // calculate (and subtract) whole hours
+        let hours = Math.floor(delta / 3600) % 24;
+        delta -= hours * 3600;
 
-    tick() {
-        this.setState({
-            date: new Date()
-        });
-    }
+        // calculate (and subtract) whole minutes
+        let minutes = Math.floor(delta / 60) % 60;
+        delta -= minutes * 60;
 
-    // componentDidMount() {  
-    //     console.log('FeedBabyTimer componentDidMount works!');
+        // what's left is seconds
+        let seconds = Math.floor(delta % 60); 
+
+        //current timestamp
+        let now = `${days} dy: ${hours} hr: ${minutes} min`
+        //let now = new Date((Date.now()-new Date(this.state.date))).toString('H:mm:ss');
+        this.setState(({ elapsedTime: now }));
+
+
+
+      }
+   
+
+    componentDidMount() {  
+        console.log('FeedBabyTimer componentDidMount works!');
         
-    //     fetch(`${config.API_ENDPOINT}/feedbabydata`)
-    //     .then(res => res.json())
-    //     .then( datalogs => {
-    //         this.setState({
-    //           date_created: datalogs[datalogs.length-1].date_created
-    //         });
-    //         console.log(this.state.date_created);
-    //     });   
-    // }
-            // //this returns the correct time difference in milliseconds
-            // let curr = new Date();
-            // let prev = new Date(this.state.date_created); 
-            // let timer = curr - prev;
-            // // let h,m,s;
-            // let h = Math.floor(timer/1000/60/60);
-            // let m = Math.floor((timer/1000/60/60 - h)*60);
-            // let s = Math.floor(((timer/1000/60/60 - h)*60 - m)*60);
-    
-            // s < 10 ? s = `0${s}`: s = `${s}`
-            // m < 10 ? m = `0${m}`: m = `${m}`
-            // h < 10 ? h = `0${h}`: h = `${h}`
-    
-            // let timeSinceLastFeed = `${h}:${m}:${s}`;
-            
-            // console.log(timeSinceLastFeed);
+        fetch(`${config.API_ENDPOINT}/feedbabydata`)
+        .then(res => res.json())
+        .then( datalogs => {
+            this.setState({
+              date: datalogs[datalogs.length-1].date_created
+            });
+            console.log(this.state.date);
+        })
+        .then(this.startCounting());
+    }
+
+  
 
 
     render() {
         return (
             <div className="flex-container">
                 <p className='timer-text'>
-                    Last Time Baby Was Fed
+                    How Long Since Baby Was Fed
                 </p>
 
                 <p className='timer'>
-                    {/* {timeSinceLastFeed} */}
-                    {this.state.date.toLocaleTimeString()}
+                    {this.state.elapsedTime}                   
                 </p>
             </div>
         ); 
@@ -76,4 +81,3 @@ class FeedBabyTimer extends React.Component {
 }
 
 export default FeedBabyTimer;
-
