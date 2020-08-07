@@ -37,7 +37,7 @@ h1 {
     text-shadow: 1px 1px 1px blue;
     color: #6f00ca;
     background-color: #ff83c1;
-    width: 375px;
+    width: 414px;
     
 }
 
@@ -45,7 +45,7 @@ h1 {
     margin: 20px 0 15px;
     padding: 10px;
     text-align: center;
-    width: 375px;
+    width: 414px;
     background-color: #6f00cae8;
     border-top: 5px solid #db006e46;
             
@@ -66,7 +66,7 @@ h1 {
     color: #fde17c;
     
     margin: -20px 0 90px;
-    width: 375px;
+    width: 414px;
     padding: 10px;
     background-color: #6f00cae8;
     border-bottom: 10px solid #fc62ef83;
@@ -86,7 +86,7 @@ h1 {
     margin: 20px 0 15px;
     padding: 10px;
     text-align: center;
-    width: 375px;
+    width: 414px;
     background-color: #6f00cae8;
     border-top: 5px solid #db006e46;
             
@@ -106,8 +106,8 @@ h1 {
     letter-spacing: 3px;
     color: #fde17c;
     
-    margin: -20px 0 90px;
-    width: 375px;
+    margin: -20px 0 100px;
+    width: 414px;
     padding: 10px;
     background-color: #6f00cae8;
     border-bottom: 10px solid #fc62ef83;
@@ -190,7 +190,7 @@ a:hover, .button:hover {
     height: 100px;
     text-align: center;
     padding: 35px;
-    margin: 0 0 35px 0;
+    margin: 0 0 45px 0;
 
     font-family: 'Balsamiq Sans', Arial, Helvetica, sans-serif;
     font-size: 35px; 
