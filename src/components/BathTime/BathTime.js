@@ -17,7 +17,8 @@ class BathTime extends React.Component {
     .then(res => res.json())
     .then( datalogs => {
       this.setState({
-        date_created: datalogs[datalogs.length-1].date_created
+        date_created: datalogs[datalogs.length-1].date_created,
+        showMessage: false,
       });
     }); 
   }
@@ -25,6 +26,10 @@ class BathTime extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     DatalogsApiService.postNewDatalog('Bath');
+  }
+
+  onButtonClickHandler = (e) => {
+    this.setState({showMessage: true})
   }
 
   render() {
@@ -45,9 +50,15 @@ class BathTime extends React.Component {
           
           <form className='bath-time-form' onSubmit={this.handleSubmit}>
             <div className="flex-container">
-              <button className="button">Bath Time</button>
+              <button className="button" onClick={this.onButtonClickHandler}>Bath Time</button>
             </div>
           </form>
+
+          {this.state.showMessage && 
+            <p className='message'>
+              Log has been entered, YAY!
+            </p>
+          }
 
           <div className='navigation flex-container-row'>
             <Link to='/bathtimelog' className='button-nav'>Logs</Link>

@@ -4,10 +4,20 @@ import DatalogsApiService from '../../services/datalogs-api-service';
 
 
 class ChangeDiaper extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { 
+      showMessage: false,
+    };
+  }
 
   handleSubmit(e) {
     e.preventDefault();
     DatalogsApiService.postNewDatalog('Diaper');
+  }
+
+  onButtonClickHandler = (e) => {
+    this.setState({showMessage: true})
   }
 
   render() {
@@ -18,11 +28,17 @@ class ChangeDiaper extends React.Component {
         <h1 className='diaper'>How's My Diaper?</h1>
 
         <div className='flex-container'>
-          <form className='change-diaper-form' onSubmit={this.handleSubmit}>
+          <form className='change-diaper-form' onSubmit={this.handleSubmit} onClick={this.onButtonClickHandler}>
             <div className="flex-container">
               <button className="button">Change Diaper</button>
             </div>
           </form>
+
+          {this.state.showMessage && 
+            <p className='message'>
+              Log has been entered, YAY!
+            </p>
+          }
 
           <div className='navigation flex-container-row'>
             <Link to='/changediaperlog' className='button-nav'>Logs</Link>

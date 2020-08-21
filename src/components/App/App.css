@@ -25,6 +25,13 @@ main, .flex-container {
     width: 100%;
 }
 
+.message {
+    font-size: 25px;
+    font-weight: 900;
+    color: purple;
+    margin: 0 40px;
+}
+
 /********************************************************/
 
 
