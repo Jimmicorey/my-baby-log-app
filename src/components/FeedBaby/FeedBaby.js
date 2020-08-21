@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import DatalogsApiService from '../../services/datalogs-api-service';
 
 class FeedBaby extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = { 
@@ -26,17 +27,18 @@ class FeedBaby extends React.Component {
         <h1 className='hungry'>I'm Hungry!!</h1>
         
         <div className='flex-container'>
-          <form className='feed-me-form' onSubmit={this.handleSubmit} onClick={this.onButtonClickHandler}>
-            <div className="flex-container">
-              <button className="button">Feed Me!</button>
-            </div>
-          </form>
 
           {this.state.showMessage && 
             <p className='message'>
               Log has been entered, YAY!
             </p>
           }
+          
+          <form className='feed-me-form' onSubmit={this.handleSubmit} onClick={this.onButtonClickHandler}>
+            <div className="flex-container">
+              <button className="button">Feed Me!</button>
+            </div>
+          </form>
 
           <div className='navigation flex-container-row'>
             <Link to='/feedbabylog' className='button-nav'>Logs</Link>

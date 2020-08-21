@@ -47,6 +47,12 @@ class BathTime extends React.Component {
         </header>
 
         <div className='flex-container'>
+
+          {this.state.showMessage && 
+            <p className='message'>
+              Log has been entered, YAY!
+            </p>
+          }
           
           <form className='bath-time-form' onSubmit={this.handleSubmit}>
             <div className="flex-container">
@@ -55,12 +61,6 @@ class BathTime extends React.Component {
               </button>
             </div>
           </form>
-
-          {this.state.showMessage && 
-            <p className='message'>
-              Log has been entered, YAY!
-            </p>
-          }
 
           <div className='navigation flex-container-row'>
             <Link to='/bathtimelog' className='button-nav'>Logs</Link>
