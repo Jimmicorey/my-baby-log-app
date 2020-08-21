@@ -29,7 +29,7 @@ main, .flex-container {
     font-size: 25px;
     font-weight: 900;
     color: purple;
-    margin: 0 40px;
+    margin: 20px 40px -50px;
 }
 
 /********************************************************/
@@ -150,6 +150,7 @@ h1 {
 .diaper {
     font-size: 43px;
     padding: 10px;
+    margin-bottom: 50px;
 }
 
 .bath {
@@ -176,7 +177,7 @@ h1 {
     letter-spacing: 3px;
     color: #fde17c;
     
-    margin: -20px 0 100px;
+    margin: -20px 0 50px;
     width: 414px;
     padding: 10px;
     background-color: #6f00cae8;
@@ -200,17 +201,17 @@ h1 {
 
 .feed-me-form {
     justify-content: space-evenly;    
-    margin-top: 135px;
+    margin-top: 80px;
 }
 
 .change-diaper-form {
     justify-content: space-evenly;
-    margin-top: 154px;
+    margin-top: 80px;
 }
 
 .bath-time-form {
     justify-content: space-evenly;
-    margin-top: 57px;
+    margin-top: 77px;
 }
 /********************************************/
 
