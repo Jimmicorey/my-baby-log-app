@@ -26,7 +26,7 @@ class ChangeDiaper extends React.Component {
 
           <div className='navigation flex-container-row'>
             <Link to='/changediaperlog' className='button-nav'>Logs</Link>
-            <Link to='/' className='button-nav'>Back</Link>
+            <Link to='/homepage' className='button-nav'>Back</Link>
           </div>
 
         </div>

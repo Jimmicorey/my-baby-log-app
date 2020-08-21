@@ -19,6 +19,10 @@ function HomePage() {
             <Link to='/bathtime' className='button'>
                 Bath Time
             </Link> 
+
+            <Link to='/' className='button aboutpage-back'>
+                Back
+            </Link>
             
         </div>  
     )

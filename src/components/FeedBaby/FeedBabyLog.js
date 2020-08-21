@@ -34,7 +34,7 @@ class FeedBabyLog extends React.Component {
    
           <div className='navigation flex-container-row'>
             <Link to='/feedbaby' className='button-nav'>Back</Link>
-            <Link to='/' className='button-nav'>Home</Link>
+            <Link to='/homepage' className='button-nav'>Home</Link>
           </div>
         </div>
       </div> 
