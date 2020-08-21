@@ -16,7 +16,7 @@ class FeedBaby extends React.Component {
   }
 
   onButtonClickHandler = (e) => {
-    this.setState({showMessage: true})
+    this.setState({showMessage: true});
   }
   
   render() {

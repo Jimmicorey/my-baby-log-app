@@ -8,7 +8,8 @@ class BathTime extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      date_created: ""
+      date_created: "",
+      showMessage: false,
     };
   }
 
@@ -17,8 +18,7 @@ class BathTime extends React.Component {
     .then(res => res.json())
     .then( datalogs => {
       this.setState({
-        date_created: datalogs[datalogs.length-1].date_created,
-        showMessage: false,
+        date_created: datalogs[datalogs.length-1].date_created
       });
     }); 
   }
@@ -29,7 +29,7 @@ class BathTime extends React.Component {
   }
 
   onButtonClickHandler = (e) => {
-    this.setState({showMessage: true})
+    this.setState({showMessage: true});
   }
 
   render() {
@@ -50,7 +50,9 @@ class BathTime extends React.Component {
           
           <form className='bath-time-form' onSubmit={this.handleSubmit}>
             <div className="flex-container">
-              <button className="button" onClick={this.onButtonClickHandler}>Bath Time</button>
+              <button className="button" onClick={this.onButtonClickHandler}>
+                Bath Time
+              </button>
             </div>
           </form>
 
