@@ -11,8 +11,8 @@ node_modules
 /coverage
 
 # production
-/build
-/HTML_TRANSFERS
+build
+HTML_TRANSFERS
 
 # misc
 notes.txt
