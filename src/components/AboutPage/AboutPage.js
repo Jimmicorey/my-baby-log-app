@@ -9,7 +9,7 @@ function AboutPage() {
                 <h1 className='welcome'>Welcome to My Baby Log</h1>
             </header>
 
-            <section>
+            <section className='box-0'>
                 <p>To begin, simply click the <span className='text-style'>let's continue</span> button below.</p>
                 <p>Then you will be taken to the <span className='text-style'>'My Baby Log'</span> homepage.</p>
                 <p>From there you can see how much time has passed since baby was last fed...</p>
