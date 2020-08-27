@@ -244,9 +244,11 @@ li{
 a {
     text-decoration: none;
     color: #500091;
+    outline: none;
 }
 a:visited {
     color: #500091;
+    outline: none; 
 }
 
 a:hover, .button:hover {
@@ -268,6 +270,7 @@ a:hover, .button:hover {
     font-weight: 700;
     color: #500091;
 
+    outline: none;
     border: 5px solid #c983028a;
     border-radius: 50px;
     background: #FCC700;
