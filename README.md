@@ -31,7 +31,7 @@ A nice feature to note is that you can see **at a glance** on this page **how mu
 
 <!-- ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_homepage.png) -->
 
-<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_homepage.png" width="100px" />
+<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_homepage.png" width="50vh" />
 
 
 
