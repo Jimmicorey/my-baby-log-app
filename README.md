@@ -30,7 +30,7 @@ From here you have the option of navigating to 1 of 3 pages: **'Feed Baby', 'Cha
 A nice feature to note is that you can see **at a glance** on this page **how much time has passed** since you last logged a feeding of baby.
 
 <!-- ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_homepage.png) -->
-<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_homepage.png" width="50%" />
+<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_homepage.png" width="50 %" />
 
 
 
@@ -38,7 +38,7 @@ A nice feature to note is that you can see **at a glance** on this page **how mu
 just click the **'Feed Me!'** button and the current date & time will be logged. 
 
 <!-- ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-page.png) -->
-<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-page.png" width="50%" /> 
+<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-page.png" width="50 %" /> 
 
 Click **'Logs'** to see the list of **dates & times** when you **Feed Baby**.
 
