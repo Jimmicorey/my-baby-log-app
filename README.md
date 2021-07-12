@@ -11,7 +11,7 @@ you’ve done them. This app will help with that.
 "How do I easily keep track of feeding, diaper changing, and bathing my baby... when it's 3 o'clock in the morning and I can barely function?"
 
 ### * Solution: 
-" 'My Baby Log' ... it's REALLY just as simple as 2-clicks and your done!!!"
+" *_My Baby Log_* ... it's REALLY just as simple as 2-clicks and your done!!!"
 
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
@@ -42,7 +42,8 @@ just click the **'Feed Me!'** button and the current date & time will be logged.
 
 Click **'Logs'** to see the list of **dates & times** when you **Feed Baby**.
 
-![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-logs-page.png)
+<!-- ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-logs-page.png) -->
+<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_feed-baby-logs-page.png" width="200px" />
 
  
 
@@ -50,12 +51,13 @@ Click **'Logs'** to see the list of **dates & times** when you **Feed Baby**.
 ### 'Change Diaper Page'... 
 just click the **'Change Diaper'** button and the current date & time will be logged.
 
-![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_change-diaper-page.png)
+<!-- ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_change-diaper-page.png) -->
+<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_change-diaper-page.png" width="200px" />
 
 Click **'Logs'** to see the list of **dates & times** when you **changed that wet/messy diaper**.
 
-![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_change-diaper-logs-page.png)
-
+<!-- ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_change-diaper-logs-page.png) -->
+<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_change-diaper-logs-page.png" width="200px" />
 
 
 
@@ -64,11 +66,13 @@ just click the **'Bath Time'** button and the current date & time will be logged
 
 Also note that you can see **at a glance** on this page the **most recent date** that you logged giving 'wee babe' a bath.
 
-![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-page.png)
+<!-- ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-page.png) -->
+<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-page.png" width="200px" />
 
 Click **'Logs'** to see the list of **bath dates & times**. 
 
-![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-logs-page.png)
+<!-- ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-logs-page.png) -->
+<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_bath-time-logs-page.png" width="200px" />
 
 
 ---------------------------------------------------------------------------------------------------------------------------
