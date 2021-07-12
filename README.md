@@ -16,7 +16,8 @@ you’ve done them. This app will help with that.
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
 ## Live Link to 'My Baby Log'
-https://my-baby-log-app.vercel.app/
+~~https://my-baby-log-app.vercel.app/~~  
+*_<---PLEASE NOTE: CURRENT LINK IS INVALID, UPDATE IS BEING MADE TO A NEW HOSTING SERVICE.--->_*
 
 
 ---------------------------------------------------------------------------------------------------------------------------
@@ -28,8 +29,9 @@ From here you have the option of navigating to 1 of 3 pages: **'Feed Baby', 'Cha
 
 A nice feature to note is that you can see **at a glance** on this page **how much time has passed** since you last logged a feeding of baby.
 
-![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_homepage.png)
+<!-- ![Screenshot](https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_homepage.png) -->
 
+<img src="https://github.com/Jimmicorey/my-baby-log-app/blob/master/screenshots/mobile_screen_homepage.png" width="100px" />
 
 
 

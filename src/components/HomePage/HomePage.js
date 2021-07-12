@@ -8,19 +8,31 @@ function HomePage() {
 
             <FeedBabyTimer />
 
-            <Link to='/feedbaby' className='button'>
+            <Link 
+                to='/feedbaby' 
+                className='button'
+            >
                 Feed Baby
             </Link>
 
-            <Link to='/changediaper' className='button'>
+            <Link 
+                to='/changediaper' 
+                className='button'
+            >
                 Change Diaper
             </Link>
 
-            <Link to='/bathtime' className='button'>
+            <Link 
+                to='/bathtime' 
+                className='button'
+            >
                 Bath Time
             </Link> 
 
-            <Link to='/' className='button aboutpage-back'>
+            <Link 
+                to='/' 
+                className='button aboutpage-back'
+            >
                 Back
             </Link>
             
