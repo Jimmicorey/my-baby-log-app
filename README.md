@@ -11,7 +11,7 @@ you’ve done them. This app will help with that.
 "How do I easily keep track of feeding, diaper changing, and bathing my baby... when it's 3 o'clock in the morning and I can barely function?"
 
 ### * Solution: 
-" *_My Baby Log_* ... it's REALLY just as simple as 2-clicks and your done!!!"
+" *__My Baby Log__* ... it's REALLY just as simple as 2-clicks and your done!!!"
 
 ---------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------
